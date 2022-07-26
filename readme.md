@@ -1,0 +1,1 @@
+Em 2013 criei um site quando estava começando a estudar html. É algo bem arcaico que quero deixar em meu Github como uma lembrança.

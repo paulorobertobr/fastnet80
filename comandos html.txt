@@ -1,0 +1,63 @@
+<p>É usado para parágraos.</p>
+
+<b>Torna o texto negrito.</b>
+
+<h1>Cabeçalho</h1>
+
+<h2>Subtítulo</h2>
+
+<h3>Sub-subtítulo</h3> 
+
+<i>Este texto deve ser itálico.</i>
+
+<small>Este texto deve ser com letras em tamanho small.</small>
+
+Um texto<br /> e mais texto em nova linha
+
+<hr /> cria uma linha assim ______________________________________________________
+
+<body style="background-color:#ff0000;"> add a cor de fundo
+
+
+<a href="http://www.html.net/">Aqui um link para HTML.net</a>
+
+<img src="tim.jpg" alt="Tim Berners-Lee" /> add img
+
+<font face="" estilo de  font aredondado
+
+<span style="color: #FFFFFF;"> add uma cor em uma palavra.
+
+Um texto<br /> e mais texto em nova linha assim em pontos .............
+
+<body style="background-color: red;"> cor no fundo do site
+
+<p style="padding:25px;border:1px solid #4F4F4F;"> add uma borda como comentario por exemplo.
+
+<H2 ALIGN=CENTER>Texto centralizado</H2>
+<H2 ALIGN=RIGHT>Texto alinhado à direita</H2>
+<H2 ALIGN=LEFT>Texto alinhado à esquerda</H2>
+
+<FONT FACE> - Define o tipo de letra
+<FONT COLOR> - Define a cor da letra
+<FONT SIZE> - Define o tamanho da letra
+Veja abaixo alguns exemplos:
+<FONT FACE="ARIAL" SIZE="1" COLOR="RED">Fica assim</FONT>
+<FONT FACE="ARIAL" SIZE="2" COLOR="BLUE">Fica assim</FONT>
+<FONT FACE="ARIAL" SIZE="3" COLOR="BLACK">Fica assim</FONT>
+<FONT FACE="TIMES" SIZE="5" COLOR="BLUE">Fica assim</FONT>
+* Note que você define com mais precisão o tamanho das letras do que a tag <H>.
+
+<B> - Negrito, <U> - Sublinhado, <I> - Itálico e <CENTER> - Centralizado
+<B>Texto em Negrito</B>
+<U>Texto Sublinhado</U>
+<I>Texto em Itálico</I>
+<STRIKE> ou <S> Texto Riscado assim
+<SUB> Como em H2O - O número 2 ficou em baixo.
+<SUP> Como em Km2 - O número 2 ficou em cima.
+<CENTER>Texto Centralizado</CENTER>
+
+<ol>
+	  <li>Primeiro item da lista</li>
+	  <li>Segundo item da lista</li>
+ 
+	</ol> abre as numeracoes de cada linha(em numeros)

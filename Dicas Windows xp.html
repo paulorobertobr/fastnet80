@@ -1,0 +1,542 @@
+<html>
+<head>
+<title>Dicas Windows xp</title>
+
+</head>
+<body>
+<body style="background-color: #00688B;">
+
+<!-- Botar em DICAS E TUTORIAIS --!>
+<!-- Botar na tabela dicas S.O. XP --!>
+<!-- IMG criar ou nao, ou colocar uma do windows xp feito em paint ou simples no google--!>
+
+<MARQUEE BEHAVIOR=SCROLL DIRECTION="left"><span style="color: #FFFFFF;"><b>As mais diversas dicas para o S.O. XP ajuda para quem tem um computador não la essas coisas.</b></MARQUEE>
+
+<center></p><h1>Grandes dicas para Windows XP</h1></center>
+<center><img src="http://marlonpalmas.files.wordpress.com/2008/03/windows-xp-service-pack-3-logo.png?w=480" ></center>
+<center><i><span style="color: #FFFFFF;">Dê um CTRL + F e o número da dica para facilita-lo</i><span style="color: #FFFFFF;">(se você ja leu, é claro né)</center>
+</p><hr >
+
+</p>Muitas das dicas desta página, necessita da execução do Editor de Registro do Windows (regedit.exe). Para isso, vá em Iniciar / Executar e digite regedit. Vale dizer que é necessário perícia para mexer no Registro do Windows, para que não ocorra danos ao sistema.
+
+</p><b>02 - Desinstalando o Windows Messenger (e outros programas):</b>
+
+A Microsoft não disponibilizou um jeito fácil de desinstalar vários programas no Windows XP, como o Windows Messenger, Pinball e outros. Mas a desinstalação destes programas pode ser feita com os seguintes passos: Com o Notepad (Bloco de Notas), abra o arquivo Windows inf sysoc.inf. Na seção Components, remova a palavra hide dos componentes que você deseja desinstalar. Por exemplo, se você quiser desinstalar o Windows Messenger, a linha original msmsgs=msgrocm.dll,OcEntry,msmsgs.inf,hide,7 ficará assim: msmsgs=msgrocm.dll,OcEntry,msmsgs.inf,,7. Após isso, salve o arquivo e os componentes escolhidos agora poderão ser desinstalados normalmente.Dê 2 cliques em Meu Computador e em seguida clic em Adicionar/Remover Componentes do Windows, então desinsta-le o Windows Messeger. Vale dizer que a primeira palavra em cada linha indica o programa (Pinball, MSWordPad, etc) e para cada uma delas você deve remover a palavra hide para que o aplicativo em questão possa ser removido do Windows XP. Essa mesma dica também funciona no Windows 2000;
+
+</p><b>03 - Altere as pastas padrão do sistema:</b>
+
+</p>Por padrão, a pasta Meus Documentos fica em C: Documents and Settings usuario Meus Documentos. Se desejar alterar isto, bem como outras pastas, abra o Editor de Registro (regedit.exe) e procure a chave HKEY_CURRENT_USERSoftwareMicrosoftWindowsCurrentVersionExplorerShell Folders. Clique com o botão direito sobre o nome de cada pasta e selecione Modificar. Agora, basta indicar qual o caminho completo e nome de pasta que você quiser;
+
+</p><b>04 - Apague as pastas especiais dentro de Meus Documentos:</b>
+
+</p>Se não gosta ou não usa as pastas especiais dentro de Meus Documentos, como Minhas Músicas e Minhas Figuras, basta executar o comando regsvr32 /u mydocs.dll em Iniciar / Executar e, em seguida, apagar as pastas indesejadas. Para reverter a ação, execute o comando regsvr32 mydocs.dll. As pastas serão criadas novamente quando o Windows inicializar;
+
+</p><b>05 - Fazendo backup do WPA, para evitar a reativação:</b>
+
+</p>Se você tiver o Window XP já ativado e funcionando corretamente em seu computador, pode ser que você necessite reinstalá-lo por algum motivo nesta mesma máquina. Neste caso, você terá reativá-lo novamente para que ele funcione. Para evitar isso, simplesmente faça um backup (cópia) de um arquivo do WPA e depois de reinstalar o Windows, copie este arquivo para o lugar correspondente. Com isso, ele estará automaticamente ativado. Para isso, copie para um disquete o arquivo WPA.DBL que está em Windows System32. Após a reinstalação do Windows XP, coloque o arquivo neste mesmo diretório e ação está terminada. Vale dizer que o arquivo WPA.DBL é onde o sistema armazena as informações sobre o hardware instalado no computador;
+
+</p><b>06 - Desabilite os balões de aviso do Windows XP:</b>
+
+</p>Se você deseja desabilitar aqueles "balões de aviso" que aparecem sempre que o sistema executa alguma função específica, faça o seguinte: Execute o regedit.exe e vá na chave HKEY_CURRENT_USER Software Microsoft Windows CurrentVersion Explorer Advanced, clique no menu Editar / Novo / Valor DWORD, digite EnableBaloonTips e pressione Enter em seu teclado. Se já houver essa variável ali, altere o seu valor para 0 (zero). A partir da próxima inicialização, os balões não serão mais exibidos;
+
+</p><b>07 - Inicialização e desligamento mais rápido:</b>
+
+</p>Se há somente um usuário em seu computador, você pode deixar o processo de boot e desligamento mais rápido. Para isso, vá em Iniciar / Executar e digite control userpasswords2 e clique em OK. No guia Usuários, desabilite a opção Usuários devem entrar um nome e senha para usar este computador e clique em Aplicar. Surgirá uma caixa de diálogo solicitando nome de usuário e senha. Selecione o nome do usuário padrão e coloque uma senha (não deixe este campo em branco!) e clique em OK. Após isso, vá ao Painel de Controle / Contas de Usuário e clique em Alterar o modo como usuários fazem logon ou logoff e desabilite as opções Use a tela de boas-vindas e Use a Troca Rápida de Usuário;
+
+</p><b>08 - Explore outras máquinas da rede mais rapidamente:</b>
+
+</p>Quando procura por outros computadores na rede, o Windows XP verifica por tarefas agendadas em comum nas mesmas. Desabilitar este recurso faz com que a procura na rede seja bem mais ágil. Para isso, execute o regedit.exe e clique em OK. Vá em HKEY_LOCAL_MACHINE/Software/Microsoft/Windows/Current Version/Explorer/RemoteComputer/NameSpace e procure pela chave D6277990-4C6A-11CF-8D87-00AA0060F5BF e apague-a. Agora, a visualização e a navegação por outros PCs da rede ficará mais rápida;
+
+</p><b>09 - Menu Iniciar mais rápido:</b>
+
+</p>Para deixar o Menu Iniciar do Windows X P mais rápido , execute o regedit.exe e vá em HKEY_CURRENT_USERControl PanelDesktop. Selecione MenuShowDelay na lista da direita e clique com o botão direito do mouse em cima. Agora, escolha Modificar e mude o valor para 0 (zero). Após o computador inicializar, o menu Iniciar estará mais rápido;
+
+</p><b>10 - Como liberar 20% de sua banda de rede/Internet:</b>
+
+</p>Há um recurso no Windows XP, chamado "Agendador de pacotes QoS", que reserva 20% da banda disponível de rede e Internet para uso próprio. Para desabilitá-lo é necessário estar logado como Administrador e executar os seguintes passos: Vá em Iniciar / Executar e digite gpedit.msc e pressione OK. Após isso, vá em Configuração do computador / Modelos Administrativos / Rede e selecione na janela da esquerda Agendador de pacotes QoS. Na janela da direita, dê duplo-clique em Limite de reserva de banda. Depois, vá na aba Configuração e selecione Ativado. Na linha Limitar % da banda, digite 0 (zero). Clique em Aplicar e em OK. Agora vá ao Painel de Controle /Conexões de Rede, clique com o botão direito na conexão existente e selecione Propriedades. Na aba Geral, habilite o Agendador de Pacotes QoS. Se já estiver habilitado, deixe-o assim. O último passo é reiniciar o computador. Se houver mais de um computador em rede, é preciso seguir este procedimento em todos para que haja um real benefício desta dica.
+
+</p><b>11 - Aumente o desempenho do Windows XP</b>
+
+<b>:. Opções Visuais</b>
+
+</p>O WinXP é bonito, traz inovações visuais interessantes. Mas isto consome recursos do micro, principalmente se sua placa de vídeo não é muito robusta. Desabilitar estas opções deixará seu equipamento mais veloz, independente da configuração (claro que isso pode ser mais ou menos perceptível de acordo com a robustez do equipamento). Para fazer as alterações, vá no Painel de Controle > Sistema > Avançado > Desempenho > Configurações. Em Efeitos visuais, desabilite os efeitos indesejados (se preferir desabilitar todos, basta selecionar “Ajustar para o melhor desempenho”). Uma opção normalmente desnecessária que também consome recursos é o “Desktop offline”. Este recurso permite que outras pessoas através da rede ou Internet possam ver seu Desktop (Área de Trabalho). Para desativá-lo, siga os seguintes passos: Painel de Controle > Video > Área de Trabalho > Personalizar Área de Trabalho > Web > Propriedades > em Documentos da Web, desabilite a caixa “Tornar esta página disponível offline”. Ainda nas propriedades de vídeo, lá na aba Geral, pode-se desativar o Assistente para Limpeza da Área de Trabalho (Painel de Controle > Video > Área de Trabalho > Personalizar Área de Trabalho > Geral > desabilitar “Executar o assistente para limpeza a cada 60 dias”. Este recurso varre e remove da área de trabalho ícones de programas que já não existem ou foram modificados. Como fica residente, também consome recursos – a limpeza pode ser feita manualmente.
+
+</p><b>:. Desabilitando serviços desnecessários</b>
+
+</p>O WinXP, por padrão, mantém ativos uma série de serviços que são desnecessários para a maioria dos usuários. Para desativá-los/configurá-los, vá em Painel de Controle > Ferramentas Administrativas > Serviços. É preciso, no entanto, saber o que se está fazendo, já que desabilitar serviços realmente necessários para o sistema fará com que seu Windows possa ficar mais lento ou que algumas coisas deixem de funcionar (como Internet, por exemplo). Recebi a sugestão, para aqueles que não sabem quais os serviços que precisam, de configurar todos os serviços para a opção “Manual”, e reiniciar o micro. O boot será lento, já que o Windows terá de iniciar todos os serviços que precisa “na força”. Então, bastaria ver os serviços iniciados e configurá-los para “Automático”. Não testei esta dica, mas é válida. É preciso salientar que alguns serviços necessários podem não ser inicializados automaticamente. O melhor mesmo é saber o que faz cada um deles. Vou tentar descrever aqui alguns, há outros cuja funcionalidade não fica muito clara então prefiro não arriscar – deixo-os habilitados (Automático). As recomendações são para um usuário doméstico comum, com uma pequena rede em casa. Atente para o fato de que estas configurações podem variar caso a caso, não existe uma regra específica – o que está abaixo é algo mais comum, mas não certo para todos:
+AUTOMÁTICO Alerta (emite alertas administrativos) Alocador Remote Procedure Call (RPC) Armazenamento protegido (favorece a segurança do computador) Áudio do Windows (possibilita a ativação de dispositivos de áudio.) Chamada de procedimento remoto (RPC) Cliente da Web (necessário para algumas situações, como o Windows Update) Cliente de rastreamento de link distribuído Detecção do hardware do Shell Estação de trabalho (gerencia conexões com servidores remotos) Gerenciador de contas de segurança (Responsável por armazenar senhas locais) Gerenciador de discos lógicos (Gerencia unidades de disco rígido) Localizador de computadores Log de eventos Logon secundário Notificação de eventos de sistema Plug and Play Serviço de restauração do sistema (se não usa ou não sabe o que é, pode deixar em Manual) Serviços de criptografia Serviços IPSEC Sistema de eventos COM+ Spooler de impressão Temas Testador de instrumentação de gerenciam. do Windows DESABILITADOS Acesso a dispositivo de interface humana (usado para dispositivos especiais de entrada) Ajuda do cartão inteligente (Ajuda para dispositivos Smart Cards) Cartão inteligente (ativa dispositivos de Smart Card) Compartilhamento remoto da área de trabalho do NetMeeting Configuração zero sem fio (necessário para dispositivos 802.11) Gerenciador de conexão de acesso remoto automático Gerenciador de sessão de ajuda de área de trabalho remota Horário do Windows (Mantém data e hora em sincronia com servidores de rede) IMAPI CD-Burning COM Service (Ativa o recurso de gravação de CDs embutido do Windows XP) – Se vc grava CDs usando apenas os recursos do Windows XP, deixe em Manual (padrão) Número de série de mídia portátil Registro Remoto (por questão de segurança – permite que usuários remotos alterem o Registro do seu Windows) Roteamento e acesso remoto Sistema de alimentação ininterrupta (Gerencia No-Breaks) (Se você usa um no-break, deixe em Automático) Telnet (por questão de segurança) MANUAL Adaptador de desempenho WMI Windows XP Agendador de tarefas (Agenda tarefas para serem executadas em data e hora pré-determinadas) Ajuda e suporte (Ativa assistentes e ajuda avançada) Aplicativo de sistema COM+ Área de armazenamento (Compartilha informações com computadores remotos) Armazenamento removível (Dispositivos de armazenamento removíveis, como Zip Drives) Assistente de aquisição de imagens do Windows (WIA) Atualizações automáticas (faz o download automaticamente de atualizações do Windows) Auxiliar NetBIOS TCP/IP Carregar Gerenciador (gerencia transferências de arquivos entre computadores da rede.) Cliente DHCP (necessário para alguns tipos de conexão à Internet) Cliente DNS (necessário para alguns tipos de conexão à Internet) Compatibilidade com 'Troca rápida de usuário' Conexões de rede (gerencia conexões de rede) Coordenador de transações distribuídas (Coordena gerenciadores de recursos) Cópia de volume em memória DDE de rede (Habilita o Dynamic Data Storage) DSDM de DDE de rede (Gerencia compartilhamentos de rede DDE) Erro ao informar o serviço (Informa erros de serviços e aplicativos de terceiros) Extensões de driver de instrum. gerenc. do Windows (Gerenciamento de drivers) Firewall de conexão com a Internet (FCI) / Compartilhamento de conexão com a Internet (CCI) Fornecedor de suporte de segurança NT LM Gerenciador de conexão de acesso remoto Gerenciamento de aplicativo Host de dispositivo Plug and Play universal Logon de rede Logs e alertas de desempenho Mensageiro (Serviço de mensagens entre computadores da rede. NÃO É o Windows Messenger) MS Software Shadow Copy Provider Número de série de mídia portátil QoS RSVP (Habilita services compatíveis com o QoS) Reconhecimento de local da rede (NLA) Serviço administrativo do gerenciador de disco lógico Serviço de descoberta SSDP Serviço de indexação Serviço de transferência inteligente de plano de fundo Serviço 'Gateway de camada de aplicativo' Serviços de terminal Servidor Telefonia Windows Installer
+
+</p>Para maiores detalhes das funções de cada serviço, consulte a Ajuda ou a Microsoft.
+
+:. Habilitando o modo UDMA/66 e superior
+
+</p>Painel de Controle > Sistema > Gerenciador de Dispositivos > Controladores IDE/ATAPI > Canal IDE Primário (e secundário também, se for o caso) > Configurações Avançadas > Em Modo de Transferência, selecionar “DMA se disponível”.
+
+:. Habilitar Logon automático – inicialização e desligamento mais rápido
+
+</p>Se há somente um usuário no micro, que tal agilizar o processo de boot e desligamento? Para isto, temos que seguir algumas etapas: a. Vá em Iniciar > Executar e digite "control userpasswords2" (sem aspas) e clique em OK. b. Na aba Usuários, desabilite a opção “Usuários devem entrar um nome e senha para usar este computador” e clique em Aplicar. c. Surgirá uma caixa de diálogo solicitando nome de usuário e senha. Selecione o nome do usuário padrão e coloque uma senha (atenção: não é recomendável deixar esta senha em branco), clique em OK. d. Vá no Painel de Controle > Contas de Usuário e clique em “Alterar o modo como usuários fazem logon ou logoff” e desabilite as opções “Use a tela de boas-vindas” e “Use a Troca Rápida de Usuário”.
+
+:. Desabilite programas desnecessários da inicialização
+
+</p>Iniciar > Executar, digite “msconfig” (sem aspas). Na aba Iniciar, desabilite os programas que não quer que iniciem Windows XP junto com o Windows.
+
+:. Explore outras máquinas da rede mais rapidamente
+
+</p>Quando procura por outros computadores na rede, o Windows XP verifica por tarefas agendadas em comum nas mesmas. Desabilitar este recurso faz com que a procura por outros micros da rede seja bem mais ágil. Siga as etapas abaixo: Iniciar > Executar, digite “regedit” (sem aspas), pressione OK. Vá em HKEY_LOCAL_MACHINE/Software/Microsoft/Windows/Current Version/Explorer/RemoteComputer/NameSpace e procure pela chave {D6277990-4C6A-11CF-8D87-00AA0060F5BF}. Apague-a e pronto. A visualização/navegação por outras estações da rede ficará mais rápida.
+
+:. Deixe o menu Iniciar mais rápido
+
+</p>Vá em Iniciar > Executar, digite “regedit” (sem aspas), pressione OK. Vá em HKEY_CURRENT_USER\Control Panel\Desktop. Selecione MenuShowDelay na lista da direita. Clique com o botão direito do mouse, selecione Modificar e mude o valor para 0 (zero). Reinicie o micro e veja a diferença.
+
+:. Gerencie melhor o arquivo de troca (memória virtual)
+
+</p>Computadores domésticos com mais de 512Mb normalmente não precisam usar a memória virtual, que acaba ocasionando perda de desempenho. Para desativá-la, vá em Painel de Controle > Sistema > Avançado > Desempenho > Avançado > Memória Virtual > Alterar. Selecione “sem arquivo de troca”, clique em Definir e OK. Caso precise usar a memória virtual, calcule-a com base em 1,5x a quantidade de memória RAM disponível (por exemplo, se você tem 128Mb de RAM, seu arquivo de troca será de 192Mb), e defina-o como tamanho inicial e máximo simultaneamente. Isto fará com que o tamanho do arquivo de troca seja fixo, prevenindo perda de desempenho e fragmentação do mesmo. Se perceber travamentos ou perda de desempenho, deixe que o Windows gerencie a Memória Virtual para você; às vezes é a melhor opção.
+
+</p><b>12 Visual sóbrio</b>
+
+</p>Algumas pessoas podem preferir um visual mais sóbrio para o Windows. É simples. Nas Propriedades de vídeoclique na opção Temas e escolha Tema clássico do Windows. Isso deixará o Windows XP com o mesmo visual do Windows 2000.
+
+</p><b>13 Troque o protetor de tela padrão da tela de login</b>
+
+</p>Você pode usar no Windows o protetor de telas de sua preferência, mas o protetor padrão da tela de login continua sempre o mesmo. Para trocá-lo por outro de sua preferência, siga os passos seguintes. Encontre no registro do Windows a chave abaixo: HKEY_USERS\DEFAULT\Control Panel\Desktop Na janela da direita, dê um clique duplo em SCRNSAVE.EXE Em Dados do Valor, digite o nome do protetor de telas que você deseja, com o caminho completo de onde ele se encontra. Se o protetor de telas estiver na pasta /System32 do Windows, bastará o nome do arquivo. Seu protetor de telas já estará trocado.
+
+</p><b>14 Mude as cores do prompt de comando</b>
+
+</p>Digite CMD no menu Executar. Vai abrir a janela do prompt de comando. Toda preta com as letras brancas. Quando ela estiver aberta, clique naquele iconezinho do lado esquerdo dela e escolha Propriedades. Windows XP Na opção Cores, escolha as cores que deseja para o fundo e para o texto. Clique em OK. Clique em Salvar as propriedades para janelas futuras com o mesmo título. Você também pode alterar o tamanho padrão da janela e a fonte, seguindo o mesmo processo.
+
+</p><b>15 Remover o amarelão do menu Iniciar</b>
+
+</p>O Windows marca os programas mais recentes que foram instalados no menu Iniciar com uma cor amarelada. Para desativar esse recurso: Clique com o botão direito do mouse na Barra de Tarefas Escolha Propriedades > Menu Iniciar > Personalizar> Avançado Desmarque a caixa "Realçar programas recém-instalados"
+
+</p><b>16 Use imagem como fundo de uma pasta no Windows</b>
+
+</p>Para usar uma imagem como fundo de uma pasta do Windows, copie as linhas abaixo, cole num editor de textos (bloco de notas por exemplo) e salve o arquivo na pasta onde deseja o fundo com o nome Desktop.ini. Edite a linha 5 para alterar o nome do arquivo .bmp e copie a imagem correspondente para a pasta do Windows. {BE098140-A513-11D0-A3A4-00C04FD706EC}={BE098140-A513-11D0-A3A4-00C04FD706EC} <{BE098140-A513-11D0-A3A4-00C04FD706EC}> Attributes=1 IconArea_Image=C:\WINDOWS\imagem.bmp IconArea_Text=0x00000000 <.ShellClassInfo> ConfirmFileOp=0
+
+</p><b>17 Habilite o Clear Type</b>
+
+</p>O Clear Type permite que as fontes apareçam de forma mais bonita e legível no seu windows. Para habilitá-lo, clique com o botão direito do mouse numa área vazia do desktop (área de trabalho) e escolha Propriedades. Clique então em Aparência. Clique em Efeitos. Marque o quadradinho ClearType.
+
+</p><b>18 Tirando as setas dos seus ícones de atalho</b>
+
+</p>Edite o registro. Escolha o item HKEY_CLASSES_RootLnkfile. Delete a chave IsShortcut. Uma maneira mais fácil de se conseguir isso é instalando o programa Powertoys.
+
+</p><b>19 Use temas sem instalar um programa de temas</b>
+
+</p>Há um meio de você fazer uso de temas sem usar um programa de Temas. Copie o arquivo UxTheme para a pasta c:\windows\system32, substituindo o arquivo original. Agora seus temas funcionarão sem a necessidade de instalar um programa de temas. O Windows impede a substituição de arquivos de sistema, portanto a cópia deve ser feita em modo de segurança ou através do programa Inuse. Reinicie o computador para que a troca faça efeito.
+
+</p><b>20 Personalizando as pastas</b>
+
+</p>Você pode personalizar as pastas de imagens do Windows, colocando uma imagem para melhor identificá-la. Escolha Propriedades da pasta, escolha Personalizar e Escolha Imagem. Você pode seguir o mesmo processo para personalizar o ícone de qualquer pasta. Windows XP 2. PRODUTIVIDADE
+
+</p><b>21 Windows mais leve</b>
+
+</p>Você pode desabilitar muitas coisas desnecessárias no Windows a fim de deixá-lo mais leve, usando Ferramentas Administrativas, no Painel de Controle. Após clicar em Ferramentas Administrativas, escolha a opção Serviços. Desde que você seja um único usuário e não esteja com o computador ligado em rede, todos os serviços listados abaixos poderão ser desativados: Alerta Agendador de Tarefas Alocador Remote Procedure Call Localizador de computadores Troca rápida de usuário Acesso a dispositivo de interface humana Serviço de Indexação (baixa a performance do HD) Mensageiro Logon de Rede (desnecessário se seu computador não está em rede) Netmeeting Remote Desktop Sharing (disabled for extra security) Registro Remoto Servidor Serviço de Descoberta SSDP (bug que deixa aberta a porta 5000) Auxiliar NetBios TCP/IP Telnet (disabled for extra security) Universal Plug and Play Device Host Upload Manager Horário do Windows Configuração zero sem fio Estação de trabalho
+
+</p><b>22 Remover o Messenger</b>
+
+</p>Clique em Iniciar (Start) - Executar (Run) e digitar o comando: "RunDll32 advpack.dll,LaunchINFSection %windir%\INF\msmsgs.inf,BLC.Remove" (sem as aspas) Não remova o Messenger se você usa o navegador MSN, pois ambos são integrados.
+
+</p><b>23 Desligamento rápido</b>
+
+</p>Talvez você seja um velho veterano do Windows e esteja acostumado a cumprir sempre aquele ritual para desligar o computador: Iniciar > Desligar... Mas desde o Windows ME que basta dar um toque na tecla Power de seu teclado para que o Windows te deixe ir pra cama.
+
+</p><b>24 Mais rapidez para o menu Iniciar</b>
+
+</p>Seu menu Iniciar vai ficar mais rápido se você fizer uma pequena alteração no registro. Navegue para HKEY_CURRENT_USER\Control Panel\Desktop. Selecione MenuShowDelay na lista da direita. Dê dois cliques nele e escolha um valor entre 0 e 400. Quanto menor o valor escolhido, mais rápido o menu fica. O padrão do Windows é 400. Sugestão: deixar em 100. Reinicie o computador. Você pode também fazer essa alteração sem mexer no registro, através do programa TweadkUi.
+
+</p><b>25 Ocultando todas as janelas abertas</b>
+
+</p>Windows XP A tecla Windows+D oculta todas os documentos abertos e mostra a área de trabalho. Digitada novamente, volta a mostrar os documentos abertos.
+
+</p><b>26 Pesquisando mais de uma extensão</b>
+
+</p>Você pode pesquisar mais de uma extensão de arquivo ao mesmo tempo no menu Pesquisar do Windows. Para pesquisar por exemplo uma palavra em todos os arquivos de textos e documentos simultanemanete, use o comando conforme abaixo: *.txt;*.doc
+
+</p><b>27 Teclado virtual</b>
+
+</p>De repente seu teclado estraga ou você por algum motivo não pode usá-lo, mas o mouse está funcionando. Bem, nesse caso você pode executar o teclado virtual. Para ativá-lo, clique em Iniciar/Executar e digite osk.
+
+</p><b>28 Iniciar programas rapidamente</b>
+
+</p>Ao lado do menu Iniciar existe a barra de Inicialização rápida, onde se pode criar atalhos para seus programas favoritos serem iniciados de forma rápida e fácil. Basta "pegar" um ícone de programa ou qualquer arquivo com o mouse e arrastar para a barra. Note que não é o programa, mas sim um atalho dele, que ficará na barra. Para excluir, basta clicar com o botão direito do mouse e escolher Excluir. Para que a barra funcione, é preciso que esteja habilitada no menu Propriedades/Barra de Ferramentas/Inicialização rápida. Para habilitá-la clique com o botão direito do mouse sobre ela e escolha Propriedades.
+
+</p><b>29 Renomeando muitos arquivos de uma só vez</b>
+
+</p>Você pode renomear muitos arquivos de uma vez só no Windows Explorer. Selecione os arquivos que deseja renomear e clique com o botão direito do mouse em um deles para renomear. Todos os outros serão renomeados automaticamente com o mesmo nome, mas numerados em seqüência.
+
+</p><b>30 Usando mais a tecla Windows</b>
+
+</p>Todo teclado atual traz uma tecla Windows que pode ser usada em conjunto com alguma outra tecla para servir de atalho para alguma atividade. Veja abaixo a relação de atalhos da tecla Windows e tire mais proveito dela: Windows: Mostra o Menu Iniciar Windows + D: Minimiza ou restaura todas as janelas Windows + E: Abre o Windows Explorer Windows + F: Abre o Pesquisar para arquivos Windows + R: Mostra a janela Executar Windows + L: Tranca a tela Windows + U: Abre o Gerenciador de Utilitários Windows + CTRL + F: Mostra o Pesquisar para computador (em rede) Windows + Shift + M: Desfaz minimizar (para todas as janelas) Windows + F1: Para Ajuda e Suporte Windows + BREAK: Mostra as Propriedades de Sistema
+
+</p>Você pode expandir essas funções, usando a tecla Windows para acessar partições, programas, pastas e até endereços na internet através do aplicativo Winkey. Em certas circunstâncias poderá ser útil desativar a tecla Windows. Para isso utilize-se do WinKeyKill, Windows XP disponível neste site para download.
+
+</p><b>31 Acesse instantaneamente a opção Executar no seu desktop ou na barra de Inicialização Rápida</b>
+
+</p>Selecione Iniciar e em seguida arraste o ícone do Executar para a área de trabalho ou para a barra Inicialização rápida. Ele aparecerá como um ícone e com o nome E&xecutar. Você pode renomeá-lo da forma como desejar.
+
+</p><b>3. ADMINISTRAÇÃO E CONFIGURAÇÕES</b>
+
+</p><b>32 Executando um programa com privilégio de Administrador, sem precisar fazer troca de usuários</b>
+
+</p>Você pode executar um programa com privilégios de administrador, mesmo logado como usuário comum. Clique com o botão direito do mouse no ícone do programa, selecione Executar como... e entre com o nome e a senha de Administrador. O mesmo método pode ser usado para executar programas de outros usuários, sem precisar trocar logon, desde que a senha seja conhecida.
+
+</p><b>33 Iniciar Windows sem precisar digitar nome e senha</b>
+
+</p>Selecione Executar no menu Iniciar e digite "control userpassswords2". Isso abrirá a janela Contas de usuários. Na janela Usuários, limpe a caixa para a opção Usuários devem entrar com um nome e senha para usar este computador e clique OK. Uma janela para logon automático surgirá. Entre com o nome e senha para a conta que você deseja usar.
+
+</p><b>34 Deletando automaticamente os arquivos temporários da Internet</b>
+
+</p>O Internet Explorer automaticamente deleta os arquivos temporários ao ser fechado, mas isso não acontece por default. Selecione Ferramentas>Opções de Internet>Avançadas e marque a opção Esvaziar a pasta Temporary Internet Files quando o navegador for fechado.
+
+</p><b>35 Pontos de restauração comendo espaço</b>
+
+Pontos de Restauração criados no Windows ocupam um determinado espaço no HD. O espaço ocupado é proporcional à quantidade de pontos de restauração criados. Assim sendo, você pode e deve eliminar os pontos de restauração mais antigos. Vá para o menu Iniciar/Todos os Programas/Acessórios/Ferramentas do Sistema/Limpeza de Disco. Na janela que se abrir, escolha "Mais Opções". Na parte de baixo escolha a opção "Restauração do Sistema" e "Limpar". Todos os pontos de restauração serão eliminados, com exceção do mais recente.
+
+</p><b>36 Scanreg no Windows XP?</b>
+
+</p>No lugar dele você poderá usar o programa Erunt para fazer backups do registro. Em caso de pane no sistema, ou se quiser desfazer alguma mudança no registro, restaure o registro em prompt de comando no modo de segurança.
+
+</p><b>37 Elimine arquivos temporários</b>
+
+</p>Muitos arquivos temporários (com extensão .tmp) são criados na pasta c:\Windows\Temp e C:\Documents and Settings\usuário. Você pode deletar todos eles periodicamente. Um bom programa para isso é o Clean Disk Security, que você encontra na seção Downloads.
+
+</p><b>38 Elimine os arquivos thumbs.db</b>
+
+</p>Quando você visualiza imagens e vídeos no modo miniaturas, o Windows cria um arquivo oculto chamado thumbs.db em cada pasta de imagens ou vídeos. Assim você acaba com um monte de arquivos thumbs.dl espalhado pelo HD do computador. Esses arquivos não aparecem no Windows Explorer, mas aparecem em disquetes ou cds daquelas pastas que forem gravados. Para livrar-se desses arquivos, siga os seguintes passos: 1. No Windows Explorer clique em Ferramentas. 2. Escolha Opções de pasta. 3. Escolha Modo de exibição. 4. Marque um x em Não armazenar miniaturas em cache. 5. Clique em Aplicar a todas as pastas. 6. Clique em Aplicar e em OK.
+
+</p><b>39 Ativando permissões na versão Home do Windows</b>
+
+</p>Clique em Iniciar>Executar. Digite "shrpubw". Escolha a pasta na qual deseja aplicar permissões. Escolha um nome para o compartilhamento. Clique em Avançar. Agora você pode personalizar as permissões.
+
+</p><b>40 Configurando teclado</b>
+
+</p>Para configurar corretamente seu teclado você deve abrir o Painel de Controle> Opções Regionais e de idioma> Idiomas> Detalhes> Adicionar. Se usa o teclado ABNT2, escolha Português (Brazil) e Português (Brasil - ABNT2). Clique Ok. Se seu teclado é o americano padrão, escolha Inglês (Estados Unidos) e Inglês (Estados Unidos - Internacional).
+
+</p><b>41 Desabilite o balão avisando que o espaço em disco está baixo</b>
+
+</p>Edite o registro, encontre a chave abaixo: HKEY_CURRENT_USER \ Software \ Microsoft \ Windows \ CurrentVersion \Policies\Explorer \ Clique com o botão direito do mouse num espaço em branco da janela direita e escolha New > DWORD. Dê ao item o nome NoLowDiskSapaceChecks, dê dois cliques nesse novo valor criado e digite 1 em Value data. Feche o registro e reinicie o Windows.
+
+</p><b>42 Salvando os Favoritos do Internet Explorer num arquivo html</b>
+
+</p>Clique em Arquivo Clique em Importar e Exportar Clique em Avançar Escolha a opção Exportar Arquivo Clique em Avançar Selecione a pasta Favoritos Clique em Avançar Veja se a opção "Exportar para um arquivo ou endereço está selecionada" e defina abaixo destino e nome do arquivo a ser salvo. Clique em Avançar Clique em Concluir
+
+</p><b>43 Backup do Outlook Express</b>
+
+</p>Todas as mensagens do Outlook Express são arquivadas em arquivos com extensão .dbx. O backup das mensagens de email pode ser feito copiando os arquivos dbx. O problema, para muitos usuários, é que esses arquivos ficam ocultos em local de difícil acesso, parecido com C:\Documents and Settings\Usuário\Configurações locais\Dados de Windows XP aplicativos\Identities\{72E34377-95B1-4ECC-A8E5-0B14A5A755F1}\Microsoft\Outlook Express. Você pode armazenar suas mensagens do Outlook Express num local de mais fácil acesso, como por exemplo na pasta /Meus Documentos/Outlook.
+
+</p>Ao fazer backup da pasta Meus Documentos, automaticamente já estará fazendo também o backup de seus emails. Para definir onde armazenar suas mensagens abra o Outlook Express, clique em Ferramentas, clique em Opções, clique em Manutenção. Em seguida escolha a opção Pasta de armazenamento. Na janelinha que se abrir você verá o local atual onde as mensagens estão armazenadas. Clique em Alterar e escolha um novo local. Todas as suas mensagens, tanto as novas que chegarem como as que já existem, serão transferidas para o novo local de armazenamento escolhido. Lembre-se, caso precise restaurar o backup, copie de volta todos os arquivos *.dbx para o mesmo local de armazenamento que estiver configurado no Outlook.
+
+</p><b>44 Barra de status no MSN Explorer</b>
+
+</p>Se você gosta do MSN Explorer pode achar estranho que ele não tenha barra de status como o Internet Explorer. Na verdade, tem sim.. Digite CTRL+SHIFT+S e ela aparece.
+
+</p><b>45 Atalho para seu protetor de telas</b>
+
+</p>Você pode fazer seu protetor de telas predileto funcionar com dois cliques do mouse. Basta criar um atalho para ele na área de trabalho ou no Menu Iniciar. Cada protetor de telas instalado em seu micro tem a extensão .scr.
+
+</p><b>46 Novo nome para a Lixeira</b>
+
+</p>Se você gostaria de renomear a Lixeira para outra coisa qualquer, como por exemplo SLU, Lixo, Trash ou qualquer outra coisa, cole o texto abaixo (destacado na cor cinza) num editor de textos (bloco de notas, editpad, ultraedit ou outro qualquer) e o salve no desktop como lixeira.reg (a extensão tem de ser reg, não txt). Dê dois cliques nele. O Windows vai perguntar se você deseja acionar a chave para o registro. Responda sim.
+
+</p>Agora clique na Lixeira com o botão direito do mouse e você encontrará a opção para renomeá-la. Windows Registry Editor Version 5.00 "Attributes"=hex:50,01,00,20 "CallForAttributes"=dword:00000000
+
+</p><b>47 Num Lock ON</b>
+
+</p>Eis que o Windows abre a tela de login. Você vai digitar sua senha e, se ela tiver números, os números não aparecem. É porque a tecla Num Lock está apagada. Pode até parecer bug do Windows, mas não é. O Windows XP mantém a tecla apagada por default por causa de ser multiusuário. Mas você pode corrigir isso através do registro. Encontre a chave abaixo: HKEY_USERS>Default>ControlPanel>Keyboard Troque o valor de InitialKeyboardIndicator de 0 para 2.
+
+</p><b>48 Particionando e formatando discos rígidos</b>
+
+</p>O fdisk, popular durante tantos anos, era um aplicativo DOS que não mais está presente no Windows atualmente. Existe no Windows um gerenciador próprio que pode ser acessado através do Painel de Controle em Ferramentas Administrativas > Gerenciamento do Computador. Lá você encontrará o Gerenciamento de Disco. Com ele é possível criar e deletar partições, formatar e alterar a letra de um disco.
+
+</p><b>49 Desligando o Windows em hora programada</b>
+
+</p>Windows XP No prompt de comando digite shutdown -t xx (onde xx é o tempo em segundos). Para anular o desligamento digite: shutdown -a. Para reiniciar o computador digite shutdown -r. Caso você queira programá-lo para desligar automaticamente após um tempo maior de uso, use programa próprio para isso em nossa área de downloads.
+
+</p><b>50 Senha de usuário esquecida</b>
+
+</p>Na tela de Bem-Vindo pressione CTRL-ALT-DEL duas vezes seguidas e entre com a senha de Administrador. Você pode então trocar a senha de usuário no Painel de Controle>Ferramentas Administrativas>Gerenciamento do Computador. Se seu Windows for o Home Edition, para iniciar como administrador execute o Windows no modo de segurança.
+
+</p><b>51 Como alterar ou trocar a letra de HD ou CD-Rom</b>
+
+</p>Painel de controle>Ferramentas Administrativas>Gerenciamento do Computador. Encontre na coluna da esquerda Gerenciamento de disco. Na coluna da direita, clique com o botão direito do mouse sobre o disco e escolha a opção Alterar letra da unidade e caminho.
+
+</p><b>52 Elimine as pastas compactas</b>
+
+</p>Se você não quer que o Windows Explorer mostre arquivos zipados como pastas compactas, você pode remover isso abrindo um prompt de comando (basta digitar CMD em Inicitar>Executar) e digitando o seguinte: regsvr32 /u zipfldr.dll. Você pode voltar atrás na sua decisão digitando regsvr32 zipfldr.dll no prompt de comando.
+
+</p><b>53 Documentos compartilhados</b>
+
+</p>Se você não está em uma rede e não deseja que a pasta Documentos Compartilhados apareça em Meu Computador, siga os seguintes passos para removê-la: Inicie o editor de registro. Na chave HKEY_CURRENT_USER \ Software \ Microsoft \ Windows \ CurrentVersion \ Policies \ Explorer \ clique com o botão direito do mouse num espaço vazio do lado direito e selecione New > DWORD Value Nome do novo valor: NoSharedDocuments Dê dois cliques no novo valor e no campo Value data coloque 1. Feche o registro. Reinicie o Windows para que a mudança faça efeito. Se quiser voltar atrás, mude o valor para 0 no Value data ou apague NoSharedDocuments Value.
+
+</p><b>54 Como trocar a localização padrão da pasta Meus Documentos</b>
+
+</p>1. Clique com o botão direito do mouse sobre a pasta Meus Documentos e escolha Propriedades. 2. Clique Mover, escolha a pasta para a qual deseja mover seus documentos e então clique OK duas vezes. Se houver necessidade de criar uma nova pasta para os arquivos, clique Nova Pasta e escolha um nome para ela. Então clique OK duas vezes. 3. Na caixa Mover, clique Sim para mover os documentos para a nova localização ou clique Cancelar para desistir da mudança. Caso você mude a pasta padrão e se arrependa, clique no botão Iniciar, clique com o botão direito do mouse sobre a pasta Meus Documentos, escolha Propriedades e clique em Restaurar Windows XP Padrão.
+
+</p><b>55 Onde está seu endereço IP no Windows?</b>
+
+</p>Digite ipconfig /all em excecutar ou no prompt de comando. Se deseja também verificar quais as portas estão abertas, digite netstat -a
+
+</p><b>56 Iniciar o Windows Explorer no C:\</b>
+
+</p>Para fazer com que o Explorer abra no drive C:\ basta seguir os passos:
+
+</p>1 - Clique com o botão direito do mouse no Windows Explorer e escolha Propriedades. 2 - No campo Objeto deixe preenchido como a seguir: C:\WINDOWS\EXPLORER.EXE /n,/e,c:\ Note que há um espaço em branco após o explorer.exe. Você também pode pura e simplesmente ignorar o Windows Explorer e sempre navegar pelas pastas e arquivos clicando em "Meu Computador".
+
+</p><b>57 Mais ordem no Menu Iniciar</b>
+
+</p>No Windows você pode alterar a ordem dos itens no menu 'Iniciar' e em seus submenus arrastando-os para um novo local. Você também pode clicar com o botão direito do mouse em um item para ver suas propriedades, excluí-lo ou classificar a lista por ordem alfabética. Pode também renomear itens sem que isso afete o funcionamento do programa. Pode criar um novo item e vários atalhos dentro deles, por exemplo, um item Games e juntar ali atalhos para todos os jogos. Pode também, no Windows Explorer ou Meu Computador, clicar com o botão direito num programa e mandar fixá-lo no Menu Iniciar. Também pode clicar num programa que esteja fixado no Menu Iniciar e mandar desfixá-lo. Enfim, coloque mais ordem no Menu Iniciar, não permitindo que os programas que forem instalados acabem por torná-lo uma bagunça, instalando-se como bem quiserem.
+
+</p><b>58 Enviar arquivos através do SendTo...</b>
+
+</p>Você pode arrastar qualquer atalho de programa ou pasta para a pasta SendTo. Essa pasta pode conter atalhos para uma impressora, um fax, uma unidade de rede ou um programa do Windows. Para abrir a pasta SendTo, execute as seguintes etapas: 1. Clique em 'Iniciar' e, em seguida, clique em 'Executar'. 2. Digite SendTo e pressione ENTER.
+
+</p>Use o botão direito do mouse para arrastar o ícone de um atalho para a janela 'SendTo'. O atalho aparecerá no menu 'SendTo'. Clique com o botão direito do mouse em um documento ou pasta, clique em 'Enviar para' e, em seguida, clique em um dos itens do menu.
+
+</p>Por exemplo, você pode criar um atalho para o arquivo Notepad.exe na pasta SendTo. Depois, se você clicar com o botão direito do mouse em um documento, poderá clicar em 'Enviar para' e, em seguida, Bloco de notas, fazendo com que o texto abra no bloco de notas.
+
+</p><b>59 Há quanto tempo seu Windows foi instalado?</b>
+
+</p>No prompt de comando digite systeminfo > systeminfo.txt. Depois abra o arquivo de texto que foi gerado. Ali você também encontrará outras informações interessantes sobre seu sistema.
+
+</p><b>60 Remover pasta Documentos compartilhados de Meu computador (versão Pro somente)</b>
+
+</p>Em Executar digite Gpedit.msc para abrir o programa Diretivas de Grupo. Vá em Configurações do usuário/Modelos administrativos/Componentes do Windows/Windows Explorer/Remover Documentos compartilhados de meu computador. Escolha a opção Ativar.
+
+</p><b>61 Elimine os balões do windows</b>
+
+</p>Windows XPSe o Windows XP está pondo à prova sua paciência, com seus balões insistentes de recados, você pode simplesmente desativá-los. Execute o registro, procure a chave HKEY_CURRENT_USER\Software\Microsoft\Windows\Current Version\Explorer\Advanced. Clique no menu Editar> Novo > Valor e escolha a opção DWORD. Entre com o texto "EnableBalloTips" e dê enter. Escolha para essa variável o valor 0 (zero).
+
+</p><b>62 Remova entradas indesejadas no Adicionar/Remover programas do Painel de Controle</b>
+
+</p>Às vezes você pode desinstalar um programa e o teimoso permanece listado na lista Adicionar/Remover do Painel de Controle. Outras vezes você não desinstalou ou programa, mas ainda assim não gosta de vê-lo mencionado naquela lista. Veja então passo a passo como remover as entradas indesejadas do Adicionar/Remover programas. 1. Execute o Regedit. 2. Selecione HKEY_LOCAL_MACHINE 3. Selecione Software 4. Dentro de Software, selecione Microsoft 5. Dentro de Microsoft, encontre Windows 6. Selecione então Current Version 7. Selecione Uninstall
+
+</p>Ao selecionar Uninstall você encontrará a lista de todos os programas que estão listados em Adicionar/Remover. Simplesmente selecione o nome do programa cujo nome deseja remover da lista e o delete.
+
+</p><b>63 Firewall do Windows</b>
+
+</p>Você pode habilitar o firewall do Windows (se não estiver usando nenhum outro) ou desabilitar (se estiver usando algum outro) através do Painel de Controle. Clique em Conexões de Rede. Na nova janela que se abrir, clique com o botão direito do mouse sobre a conexão (ou conexões) que estiver disponível e, na orelha "Avançado" você marca ou desmarca o quadradinho referente ao firewall. O firewall do Windows controla apenas o fluxo de dados que entra, e não o que sai, sendo, portanto, mais indicado optar por um programa firewall de terceiros.
+
+</p><b>64 Programas em excesso na memória</b>
+
+</p>Quando você liga o computador, diversos serviços e programas são carregados na memória. É bem provável que você não precise de todos eles. Desativando os programas que você não usa, seu windows ganha mais recursos de memória. Para verificar o que seu windows carrega o tempo todo nas costas e desativar o que você não necessita, clique no botão Iniciar e depois em Executar. Digite services.msc e dê Ok. Agora você pode ver tudo o que está rodando em background no seu windows e desativar o que não for necessário.
+
+</p><b>65 Desfragmentação no boot</b>
+
+</p>Você pode habilitar ou desabilitar a desfragmentação automática no boot do windows. A desfragmentação fará com todos os arquivos de inicialização sejam gravados próximos uns dos outros, permitindo um boot mais rápido.
+
+</p>Edite o registro, navegue em HKEY_LOCAL_MACHINE SOFTWARE MICROSOFT Dfrg BootOptimizeFunction. Selecione Enable na lista da direita. Dê dois cliques e troque o valor para Y (para habilitar) ou N (para desabilitar).
+
+</p>Reinicie o computador.
+
+</p><b>66 Restringindo acessos (versão Pro somente)</b>
+
+</p>Windows XP Você pode alterar várias configurações de segurança no seu windows usando o programa Diretivas de Grupo. Clique em Iniciar/Executar e digite gpedit.msc. Dê Ok. O programa abre. Nas pastas você encontrará centenas de opções para explorar que lhe permitirão limitar o acesso e o controle do computador. Apenas tome cuidado para não mexer onde não deve. C:\WINDOWS\system32\rundll32.exe user32.dll,LockWorkStation
+
+</p><b>67 Ativação do Windows</b>
+
+</p>Em caso de dúvida sobre se seu Windows está mesmo ativado, digite o comando abaixo no prompt de comando ou em Inicicar/Executar: oobe/msoobe /a
+
+</p><b>68 Search Companion</b>
+
+</p>É possível desativar o personagem animado ou escolher um outro para ser usado. Você pode também escolher qualquer serviço de busca na internet, como por exemplo o Altavista ou o Google, para funcionar como default no lugar do que é o padrão do Search Companion. O Search Companion pode ser configurado para pesquisar também arquivos ocultos e de sistema. Novos caracteres para para usar no Search Companion você encontra clicando no simpático robô (Robby). Depois é só escolher o personagem e descompactá-lo para a pasta /Windows/MSagent/CHARS. Se o arquivo for executável, basta executá-lo que ele se instala automaticamente na pasta apropriada.
+
+</p><b>69 Usar o Google no lugar do MSN no Internet Explorer</b>
+
+</p>O site de busca padrão do Internet Explorer é o MSN. Existem sites de busca melhores. É possível fazer uma troca. Para colocar o Google como pesquisador padrão, edite o registro, procure pelas chaves abaixo e faça as respectivas substituições: "Search Page"="http://www.google.com" "Search Bar"="http://www.google.com/ie" ""="http://www.google.com/keyword/%s" "SearchAssistant"="http://www.google.com/ie"
+
+</p><b>70 Mude a imagem de usuário que aparece na tela de login e no menu Iniciar</b>
+
+</p>Patinho, sapo e coisas semelhantes podem não agradar como símbolo de sua imagem. Você pode clicar na imagem atual, o que fará abrir a janela de contas de usuário. Ali você encontra a opção para trocar a imagem, inclusive por alguma figura que estiver no seu hd, como por exemplo uma foto sua.
+
+</p><b>71 Trancar a tela</b>
+
+</p>Tecla Windows + L (O windows abre sua janela de login e pede senha).
+
+</p><b>72 FAT32 para NTFS</b>
+
+</p>Se você comprou o computador já com o Windows XP, ele poderá ter sido instalado em FAT32. O comando convert permite converter uma partição FAT32 (própria de versões anteriores do Windows) em partição NTFS. Você deve usar o comando no formato abaixo: convert c: /fs:ntfs (altere o c: se necessário para a letra correta da partição que deseja converter) O ideal Windows XPserá fazer uma instalação clean já em NTFS.
+
+</p><b>73 Iniciar programas para Windows no prompt de comando</b>
+
+</p>Você pode iniciar programas para Windows a partir do prompt de comando digitando o nome do programa a ser executado, incluindo os parâmetros. Por exemplo, para iniciar o Bloco de notas, digite "notepad" (sem as aspas) no prompt de comando e pressione ENTER. Use o comando Start em um prompt de comando para iniciar um programa ou abrir um documento. Por exemplo, digite C:>start calc.exe.
+
+</p><b>74 Personalizar a barra de tarefas no Windows</b>
+
+</p>No Windows é possível personalizar a barra de tarefas. Clique sobre ela com o botão direito do mouse, escolha Propriedades e, em seguida, Avançado. Ali você encontra muitas opções para a barra de tarefas e para o menu iniciar. Por exemplo, desmarque a opção Ativar movimentação e redimensionamento para impedir que a barra possa ser movida ou redimensionada.
+
+</p><b>75 Fácil acesso às propriedades do computador</b>
+
+</p>Para visualizar as propriedades do computador (sistema), clique com o botão direito do mouse em Meu computador e, em seguida, clique em Propriedades. Você pode também usar como atalho as teclas WINDOWS+BREAK.
+
+</p><b>76 Mostrando o nome do administrador na tela de logon</b>
+
+</p>Para mostrar seu nome como administrador na tela de login, edite o registro e vá para HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\WindowsNT\ CurrentVersion\Winlogon\SpecialAccounts\UserList.
+
+</p>Caso não exista, crie um novo valor DWORD value com o nome Administrator. Dê OK. Dê dois cliques nele e escolha o valor 1. Dê Ok. Agora, sempre que logar como Admin/Sysadmin você verá sua conta de Administrador na tela de Bem vindo do Windows.
+
+</p><b>77 Limpando o cache do sistema de proteção de arquivos</b>
+
+</p>O Windows XP usa um sistema de proteção de arquivos (WFP), de modo que se algum arquivo de sistema for substituído de forma não autorizada por você ou por algum programa, o Windows recupera a versão anterior do arquivo.
+
+</p>Mas para poder fazer isso ele armazena em cache todas as .dll e outros arquivos de sistema na pasta System32/dllcache. E isto custa alguns bons megabytes no seu disco. Aqui está o que pode ser feito para não perder tanto espaço: Abra uma janela de prompt e digite, sem as aspas, "sfc /cachesize=x" onde o x é a quantidade em MB que você deseja reservar para o cache do Windows. 50MB seria um bom tamanho. Agora podemos fazer uma outra coisa: eliminar todos os arquivos armazenados no cache, que estava exageradamente grande. Para isso digite no prompt sem as aspas: "sfc /purgecache". Você vai notar uma intensa atividade no HD. Significa que uma infinidade de arquivos do cache estão sendo deletados. Não se preocupe, se mais tarde o Windows vier a precisar de algum deles e não o encontrar no cache, pedirá que você insira o CD de instalação e o encontrará no CD.
+
+</p><b>78 Elimine o arquivo HIBERFIL.SYS</b>
+
+</p>O arquivo hiberfil.sys ocupa um espaço enorme no seu computador. Você pode recuperar esse espaço se desabilitar a função de hibernação do Windows.
+
+</p>Windows XP Melhor simplesmente desligar o monitor quando precisar se ausentar do computador por um bom espaço de tempo. No Painel de Controle, em Opções de energia, na opção Hibernar, desmarque o quadradinho que diz Ativar Hibernação. Isso elimina do seu HD o arquivo hiberfil.sys, que em certos casos pode chegar a mais de 500MB.
+
+</p><b>79 Para que uma lixeira tão grande?</b>
+
+</p>Diminua o tamanho da lixeira. O Windows reserva 10% do espaço de seu disco rígido para a Lixeira. Isso é um desperdício. Clique sobre a Lixeira com o botão direito do mouse e, nas Propriedades, escolha um tamanho menor.
+
+</p>Quanto maior o HD, menor pode ser o tamanho reservado para a Lixeira. Eu uso 3%. Você deve decidir pelo tamanho mais apropriado para você.
+
+</p><b>80 Tamanho da memória virtual</b>
+
+</p>O Windows XP, ao ser instalado, exagera no tamanho do pagefile. O pagefile é o arquivo de memória virtual do Windows. Quanto mais memória você tiver no computador, menor pode ser o tamanho da memória virtual. Descubra qual é o tamanho ideal para você e configure de modo a salvar um pouco mais de espaço em disco. Dica: Se ao trabalhar com um arquivo grande e pesado, como por exemplo jogar um game que exija muito do computador, scanear uma foto em alta resolução, editar um arquivo de som e outras coisas do gênero, você perceber que seu HD fica com a luz vermelha muito ativa, você precisa de mais memória e, na falta dela, precisa de mais memória virtual.
+
+</p>Entretanto, se tudo aquilo é feito de forma rápida e fácil, sem atividade intensa no HD, você pode experimentar diminuir a memória virtual até encontrar a configuração mais adequada.
+
+</p><b>81 Arquivo log que cresce cada vez mais</b>
+
+</p>Se você instalou alguma vez o programa BootVis, existe no seu HD um arquivo log que cresce cada vez mais e pode tomar mais de 1GB do espaço de seu disco rígido.
+
+</p><b>82 Arquivos temporários da internet</b>
+
+</p>Diminua o cache do Internet Explorer. Para fazer isso clique em Ferramentas> Opções de Internet>Geral. Vá nas Propriedades de Arquivos temporários da internet e use a barra para diminuir o espaço destinado aos arquivos temporários. Você pode também configurar o Internet Explorer para deletar os arquivos temporários a cada vez que ele é fechado. Para fazer isso escolha Ferramentas>Opções de Internet>Avançado. No item Segurança, marque um x no quadradinho que diz para apagar os arquivos temporários cada vez que o Internet Explorer for fechado. Muito bem, ao fechar o Internet Explorer, você vai notar a luizinha vermelha do seu HD piscando algumas vezes. Isso demonstra que os arquivos temporários já estão indo pro espaço.
+
+</p>4. APLICATIVOS
+
+</p><b>83 Seu computador pode falar</b>
+
+</p>Você pode instalar e usar o Falador no lugar do Narrador do Windows. O Falador pode ler os textos que forem copiados para a área de transferência do Windows ou digitados em sua janela.
+
+</p><b>84 Faça o Internet Explorer abrir mais rápido</b>
+
+</p>Um bug original do Windows 2000 acabou permanecendo no Windows XP, levando o Internet Explorer a pesquisar por tarefas agendadas sempre que é aberto. Você pode eliminar esse problema encontrando o seguinte item do registro: HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\Current Windows XP Version\Explorer\RemoteComputer\NameSpace Encontre então na coluna da direita a chave ClassId key {D6277990-4C6A-11CF-8D87-00AA0060F5BF} e a delete simplesmente. Saia então do registro e abra o Internet Explorer. Observe a diferença!
+
+</p><b>85 Retire a tela splash do Outlook Express</b>
+
+</p>O Outlook Express vai abrir mais rapidamente se não apresentar aquela tela splash. Para retirar a tela, siga os seguintes passos: Edite o registro e encontre a chave abaixo: HKEY CURRENT USER\Identities\{Long ID No.}\Software\Microsoft\OutlookExpress\5.0
+
+</p>Siga então os passos; EDITAR> Novo> Valor Dword> Digite "NoSplash", e dê a essa chave o valor "1" (sem as aspas)
+
+</p>Feche o editor do registro e reinicie o Outlook, agora sem a tela splash.
+
+</p><b>86 Faça o Nero abrir mais rápido</b>
+
+</p>Se você também considera o Nero o melhor programa para gravar seus cds, faça com que ele abra mais rápido. Normalmente, quando é aberto, o Nero mostra a mensagem "Scaning SCSI/IDE-Bus Please Wait" e fica nisso um tempão. Isso acontece porque o Windows também faz uso simultâneo do drive de CD-RW. Se você desativar essa função no Windows, o Nero fica livre e solto para abrir mais rápido. Siga então os passos abaixo:
+
+</p>Abra o Painel de Controle e encontre Ferramentas Administrativas. Escolha o item Serviços. Procure então pelo item IMAPI CD-Burning COM Service e dê dois cliques nele. Na janela de Propriedades que se abrir, escolha a opção Desativado. Clique em Aplicar. Agora abra o Nero e sinta a diferença!
+
+</p><b>87 Fazendo o Nero combinar com o Clone CD</b>
+
+</p>Se você instalar o Clone CD e depois instalar o Nero, é possível que seus drives de CD fiquem invisíveis em Meu Computador. Então instale primeiro o Nero, depois o Clone CD e tudo ficará normal.
+
+</p><b>88 Tire os banners do ICQ</b>
+
+</p>Para remover os banners aborrecentes do ICQ, vá para a pasta onde o ICQ se encontra instalado (normalmente c:\Arquivos de programas\ICQ e delete o arquivo ICQHttp.dll (não delete o arquivo ICQHttp_.dll). Reinicie o ICQ.
+
+</p><b>89 Front Page 2000 no Windows XP</b>
+
+</p>Se você usa o Front Page do Office 2000 no Windows XP, já deve ter percebido uma incompatibilidade. O Front Page fecha sozinho quando se está trabalhando com ele. Para resolver o problema, edite o registro e siga os passos: Selecione HKEY_LOCAL_MACHINE Localize e selecione a chave abaixo: \Software\Microsoft\Office No menu Editar (do regedit), escolha Permissões. Selecione o usuário que estiver logado e marque um x nos quadradinhos Controle Total e Leitura.
+
+</p>5. PROBLEMAS E SOLUÇÕES
+
+</p><b>90 Pesquisar pirateado</b>
+
+</p>Windows XP Muita gente no Brasil tendo problemas com o Pesquisar do Windows, em vista da versão pro corporate "alternativa" sendo usada. Para que o Pesquisar funcione corretamente naquelas versões pirateadas, você pode renomear C:/Windows/srchasst/mui/0416 para C:/WINDOWS/srchasst/mui/0409.
+
+</p><b>91 Problema com gina_x86.dll</b>
+
+</p>Uma versão pirata do Windows XP muito difundida por aí é aquela que usa o secreset Nela o usuário não consegue acessar alguns recursos do Painel de Controle nem ativar a tela de boas-vindas. Isto se deve ao arquivo gina_x86.dll que foi utilizado para piratear o Windows. Uma solução é ir à pasta /Windows/System32 e dar dois cliques no arquivo setup do gina para instalá-lo. Na tela que for aberta, encontre embaixo o termo "uninstall" e dê início à desinstalação do programa. Quando ele perguntar se é para excluir o arquivo gina_x86.dll clique em Não e reinicie o computador.
+
+</p><b>92 Windows discando sozinho para internet</b>
+
+</p>Por default a discagem automática da rede dial up fica habilitada na instalação do Windows. Para mudar isso:
+
+</p>Abra o Painel de Controle, então clique em Ferramentas Administrativas. Dê dois cliques em Serviços. Dê dois cliques em Gerenciador de conexão de acesso remoto automático. Escolha Desativado. Clique Ok.
+
+</p><b>93 Computador reiniciando sozinho com Windows XP</b>
+
+</p>É padrão do Windows dar um reboot no seu computador quando encontra uma falha de sistema. Você pode impedir isso desabilitando o autoreboot. Edite o registro e localize HKEY_LOCAL_MACHINE\SYSTEM\CurrentControl\SetControl\CrashControl.
+
+</p>Selecione AutoReboot na lista da direita. Dê dois cliques nele e troque o valor para 0 (zero) para desabilitar ou 1 para habilitar. Reinicie o computador. Também é possível solucionar o problema sem editar o registro.
+
+</p>Abra o Painel de Controle, escolha Sistema, selecione Avançado e clique em Configurações no último tópico (inicialização e recuperação). Desmarque a opção Reiniciar automaticamente. Deixe marcada a opção Gravar um evento no log do sistema. Para ver porque o sistema teve alguma falha, digite "eventvwr" no prompt de comando ou no menu Iniciar>Executar.
+
+</p><b>94 Windows reiniciando computador quando manda desligar</b>
+
+</p>O mais provável é que você não esteja com a função ACPI habilitada no BIOS. ACPI é o que controla o desligamento do computador.
+
+</p><b>95 Windows não desligando corretamente</b>
+
+</p>Vá em Propriedades de Video/Proteção de tela/Energia do monitor e clique na opção Ativar suporte a gerenciamento avançado de energia (APM).
+
+</p><b>96 Computador ligando sozinho</b>
+
+</p>Ao ligar o estabilizador, antes de ir ao botão Power, o computador já liga e abre o Windows. Esse problema pode acontecer com algumas placas mães ligadas a alguns tipos de fontes. Quase sempre isso se deve ao fato de placas-mães mais modernas poderem ligar sozinhas o computador quando detectam atividade de rede ou modem. A solução, então, é desabilitar esse recurso no Setup. Na seção Power Managment é preciso encontrar a opção Wake Up Events e desabilitar as funções Wake Up on LAN e Wake Up on Modem.
+
+</p>Assim, de "Enable" passe aquelas opções para "Disable".
+
+</p><b>97 Se o speaker da Sound Blaster Live não funcionar</b>
+
+</p>Se você tem uma Sound Blaster Live com Windows XP e os drivers mais recentes da Creative, pode ser que não consiga executar o programa Speaker, localizado no menu do AudioHQ. Localize então o arquivo ctsurmix.exe na pasta da Creative, clique nele com o botão direito do mouse, selecione Propriedades e Compatibilidade. Deixe-o então no modo de compatibilidade com o Windows 2000.
+
+</p><b>98 Internet Explorer 6 salvando arquivo .jpg como .jpe</b>
+
+</p>O correto é a extensão .jpg associada com arquivos jpeg. Você poderá solucionar esse problema encontrando a seguinte chave do registro: HKEY_CLASSES_ROOT\MIME\Database\Content Type\image/jpeg
+
+</p>Verifique na janela da direita o nome "Extension"; ele deverá ser do tipo REG_SZ, com Data ".jpg" e se assim não for, dê um duplo clique e corrija para .jpg
+
+</p><b>99 Windows XP e os games</b>
+
+</p>Apresentamos dicas e soluções para você tirar melhor proveito dos seus jogos com o Windows XP Um desempenho pobre nos jogos nunca é algo atrativo. Se você pode contar os quadros de animação em novo jogo de tiro 3D, se é regularmente interrompido quando mais dados regionais são carregados para seu simulador de vôo ou, ainda, na hora de carregar ou salvar os jogos parece demorar uma eternidade, você não está sozinho. Nós todos passamos por isso, mas o que se pode fazer? Bem, não entre em pânico. O Windows lhe dá muitas opções de melhorar sua performance e gerenciar dispositivos de hardware inoportunos. Mesmo que você tenha trabalhado com o Windows 95 e 98 por muitos anos e, recentemente, migrou para o Windows XP, esse novo sistema operacional pode lhe jogar em algumas enrascadas inusitadas, e esta matéria traz algumas dicas e soluções para que ninguém saia gritando "onde está toda essa eXPeriência que as pessoas falam" na hora de rodar seu game preferido. Básico do Windows
+
+</p>Antes de colocar aquele jogo de volta na caixa e devolvê-lo à loja, gaste alguns minutos fazendo algumas verificações simples do Windows XP. Isso pode lhe poupar um vexame caso o vendedor resolva testar o jogo na sua frente e o dito cujo funcionar normalmente (e ainda por cima no XP). Não culpe o jogo, verifique antes o que você pode ter feito errado. Apesar de a maioria das dicas nesta matéria se referirem ao Windows XP, a maioria delas pode ser aplicada em versões anteriores, também, como o Windows 98 ou 2000.
+
+</p>Desabilite os aplicativos de fundo Cada tarefa ou aplicativo executado em seu PC consome uma certa quantidade de memória do processador. Quanto mais tarefas em execução, menos memória geral pode ser direcionada para o seu jogo - então, sua performance pode ser prejudicada. É fácil encerrar qualquer tarefa de fundo desnecessária, de forma que um PC possa dedicar a quantidade máxima de memória do processamento para seu jogo. O Windows XP oferece o gerenciador de tarefas, como uma loja 24 horas, que permite verifiqar o que está sendo executado naquele exato momento - incluindo aqueles aplicativos que são iniciados com o Windows se que o usuário seja consultado. Pressione as teclas Ctrl + Shift + Delete para abrir o Gerenciador de tarefas e selecionar a janela de aplicativos. Selecione e finalize qualquer outro programa além do jogo que você está tentando executar. Procure na janela de Processos por utilitários como mixers de áudio, firewalls, controladores de jogos ou utilitários rodando na memória.
+
+</p>Tente finalizar as tarefas que não são do sistema (essas tarefas que estão listadas próximo ao nome de usuário) e que mostram a utilização significante da memória ou CPU. Por exemplo, se você possui um utilitário gerenciador de joystick pedindo por recursos da CPU, sendo que seu jogo não utiliza um joystick, então, finalize o gerenciador de joystick e veja se isso não faz alguma diferença.
+
+</p>Existem apenas duas regras: Finalize apenas uma tarefa por vez (você sempre pode finalizar e reiniciar o sistema para reiniciar todas as suas tarefas novamente), e tarefas designadas como do "sistema" ou "serviço" não devem ser finalizadas a não ser que esteja tentando isolar uma tarefa específica que possa estar afetando a estabilidade de seu sistema.
+
+</p>Verifique seu drive
+
+</p>Seu disco rígido armazena dados por grupos de setores (chamados de "clusters"), e os arquivos salvos são fragmentados para ocupar clusters disponíveis em qualquer lugar no drive físico. Às vezes, os clusters se perdem, deixando um arquivo incompleto, ou então, dois ou mais arquivos acidentalmente tentam utilizar o mesmo cluster. Em outros casos, arquivos antigos podem causar a falha de alguns clusters (evitando que eles armazenem dados). O ScanDisk verifica e recupera esses tipos comuns de problemas de drives. Nós recomendamos o uso do ScanDisk pelo menos uma vez a cada quinze dias - há quem diga que três meses é um período razoável, mas, lembre-se, estamos falando de Windows, portanto, todo o cuidado é pouco.
+
+</p>No Windows 98, o ScanDisk existia como um aplicativo separado no menu de programas das ferramentas do sistema, mas o Windows XP integrou uma ferramenta bem similar direto na tela de propriedades do drive. Dê um clique com o botão direito em um drive na janela Meu computador para abrir suas Propriedades e, então, selecione o menu de Ferramentas. Clique em Verificar agora para procurar por erros no disco. Aqui vai uma dica: se você deixar a caixa Reparar erros de arquivos do sistema automaticamente desmarcada enquanto efetua a verificação do drive à procura de erros, será mais rápido refazer o teste mais uma vez depois e reparar quaisquer erros.
+
+</p>Algumas vezes o Windows XP precisa reiniciar seu sistema para fazer a verificação, o que trará a mesma tela de verificação de disco que você freqüentemente vê quando o Windows faz uma verificação automática após uma queda do sistema.
+
+</p>Desfragmentação de disco
+
+</p>Quando o espaço de disco é limitado, um arquivo utilizará qualquer espaço livre em um drive, espalhando-se pelos clusters em diferentes partes do disco rígido. Isso pode permitir que pedaços de um arquivo possam, eventualmente, serem divididos por todo o drive (efeito chamado de "fragmentação de arquivo"). A performance do drive pode diminuir, pois, leva tempo para que o drive encontre todos os clusters separados. Você pode perceber isso na forma do tempo de carregamento mais demorado para seus jogos, ou na hora de salvá-los. Utilize o Desfragmentador de disco no Windows XP para deixar seu drive de modo que os arquivos não sejam divididos.
+
+</p>Clique em Iniciar, Todos os programas, Acessórios, Ferramentas do sistema e, então, Desfragmentador de disco. Utilize o botão Analisar para verificar o drive primeiro e medir a quantidade de fragmentação e, em seguida, selecione Desfragmentar se houver mais de 10% de fragmentação. Lembre-se que isso pode levar até várias horas para ser realizado, dependendo do tamanho do drive, o número de arquivos e a quantidade de fragmentação - nessas horas, 512 MB de RAM são mais do que bem-vindos.
+
+</p>Restauração do sistema
+
+</p>O Windows XP fornece um recurso de restauração do sistema que mantém controle sobre o estado de seu sistema, criando periodicamente novos "pontos de restauração" conforme programas, drivers e utilitários são adicionados ou removidos do sistema. Quando esse driver atualizado ou jogo com problema confundir seu PC, você pode utilizar a Restauração do sistema para reverter seu sistema ao estado funcional anterior.
+
+</p>Clique em Iniciar, Todos os programas, Acessórios, Ferramentas de sistema e, então, Restauração do sistema. Utilize o Assistente para a Restauração do sistema do Windows XP de uma lista de pontos de restauração disponíveis ou, manualmente, crie um novo ponto de restauração você mesmo (uma coisa muito útil a se fazer antes de instalar aquele jogo enorme).
+
+</p>Com a restauração do sistema, deve haver muito menos razões para reinstalar o Windows XP, a não ser que você insista em restaurar o estado de "novo" que o PC tinha logo após ser instalado. No entanto, a Restauração do sistema realmente toma algum espaço do drive para armazenar esses pontos de restauração. Se você estiver com falta de espaço no HD, então, seria melhor desabilitar esse recurso, assim, você precisará restaurar o Windows à moda antiga.
+
+</p>Exibir Miniaturas
+
+</p>Se por algum motivo seu Windows parou de exibir suas figuras como Miniaturas, vá em "executar" e digite: regsvr32 %windir%\system32\shimgvw.dll
+
+<hr >
+<center><a href="http://fastnet80.netau.net/" /><img src="http://i80.servimg.com/u/f80/18/25/20/20/yeux-113.gif" /></a></p><b><span style="color: #000000;">Inicio</b></center>
+<div align=center><img src='http://contador.s12.com.br/img-Ab4b997D-5.gif' border='0' alt='counter free'></a><script type='text/javascript' src='http://contador.s12.com.br/ad.js?id=Ab4b997D'></script></div>
+
+<p style="padding:25px;border:1px solid #FFFFFF;">
+<span style="color: #FFFFFF;"><b>Creditos ao conteudo:extremaonline</b>
+<br><span style="color: #FFFFFF;"><b>Editado por Paulo Roberto.</b>
+
+
+</body>
+</html>
+

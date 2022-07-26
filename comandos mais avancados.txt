@@ -1,0 +1,430 @@
+INTRODUÇÃO AO HTML - COMO FAZER UM SITE
+
+Como fazer um site. Todos os códigos html: Como incluir flash, vídeos, imagens, músicas, inserir links, download, e-mail, Meta Tags, link para download, Tabela de cores, Atributos, etc. Faça seu site grátis com os códigos.
+O objetivo desta página é ensinar os princípios básicos para confecção de um site em HTML para que você possa fazer seu primeiro site.
+Aqui você aprenderá códigos HTML e saberá como inserir um vídeo, como inserir uma música, como inserir um flash, Inserir imagens, Criar Links com imagens, Como fazer tabelas, Criar Links para e-mail, Criar Âncora, Caixa de Texto, Meta-Tags, Letreiros e Linhas, Imagens de Fundo, Fazer Listas, Links para Downloads, Formatar Textos, Tamanho e Cores de Fonte, Cabeçalhos, Atributos de Body, enfim, será sua iniciação para fazer um site em HTML.
+Existem editores HTML que oferecem comodidade para confecção das páginas, tais como: FrontPage; Dreamweaver e outros. Mas não será necessário aprendendo os códigos abaixo e você poderá fazer no Word ou Bloco de Notas e salvar como .html.
+Toda página é composta por Tags, que são os comandos html. Toda página deve comerçar com a tag <HTML> e terminar com </HTML>. Note que a barra "/" determina o fechamento da tag. Estas são as Tags fundamentais de sua página, isto é, toda página contém estas tags:
+Na medida do possível irei acrescentando mais dicas para você fazer um site bem legal. ITENS BÁSICO EM HTML:
+<HTML>
+<HEAD>
+<TITLE> Título da página </TITLE>
+</HEAD>
+<BODY> Texto; Imagens; Links; etc </BODY>
+</HTML>
+As tags podem ser escritas em Maiúscula ou Minúscula Ex.: <html> ou <HTML>.
+O Título da página aparecerá no alto da janela do browser e será referenciado em buscas pela rede. Ao ser adicionada à "Favoritos" (Bookmarks), o título será o atalho para ela.
+Ir para o topo
+ATRIBUTOS DE <BODY> :
+
+Através de <BODY>, podemos definir cores dos textos, links e fundo das páginas, ou uma imagem de fundo. Temos então:
+BGCOLOR - Cor de fundo
+TEXT - Cor da fonte dos textos
+LINK - Cor dos links (padrão: azul)
+ALINK - Cor dos links, quando clicados (padrão: vermelho)
+VLINK - Cor dos Links, depois de visitados (padrão: roxo)
+BACKGROUND - Imagem de fundo: Indica o URL da imagem.
+Podemos definir tudo de uma só vez, colocando o seguinte código:
+<BODY BGCOLOR="YELLOW" TEXT="BLACK" LINK="BLUE" ALINK="RED" VLINK="PURPLE">
+Não está no código acima o atributo BACKGROUND pois não é padrão.
+Ir para o topo
+C O R E S NO SEU SITE:
+
+Você pode escrever as cores (em inglês) ou colocar seu código. Porém, para escrever só é aceito 16 cores, que são:
+Preto = black - código = #000000
+Branco = white - código = #FFFFFF
+Azul = blue - código = #0000FF
+Amarelo = yellow - código = #FFFF00
+Verde = green - código = #008000
+Lima = lime - código = #00ff00
+Marron = maroon - código = #800000
+Oliva = olive - código = #808000
+Azul Celeste = aqua - código = #00ffff
+Lilás = fuchsia - código = #ff00ff
+Cinza = gray - código = #808080
+Azul escuro = navy - código = #000080
+Roxo = purple - código = #800080
+Verde escuro = teal - código = #008080
+Cinza claro = silver - código = #c0c0c0
+Vermelho = red - código = #FF0000
+Mas você pode definir varias tonalidades e cores, basta ter a lista de códigos das cores, ou
+CLICAR AQUI
+Ir para o topo
+CABEÇALHOS :
+
+O tamanho das letras ou fontes é definido pela tag <H> - "Headings".
+A tag <H> normalmente é usada em CABEÇALHOS e há seis níveis. Com esta tag você pode definir o tamanho das letras, mas não o tipo da fonte. Veja abaixo como fica:
+Este é o tamanho:<H1>
+
+Este é o tamanho:<H2>
+
+Este é o tamanho:<H3>
+
+Este é o tamanho:<H4>
+
+Este é o tamanho:<H5>
+
+Este é o tamanho:<H6>
+
+Pode-se alinhar os cabeçalhos
+<H2 ALIGN=CENTER>Texto centralizado</H2>
+<H2 ALIGN=RIGHT>Texto alinhado à direita</H2>
+<H2 ALIGN=LEFT>Texto alinhado à esquerda</H2>
+Ir para o topo
+TAMANHO E CORES DAS LETRAS :
+
+Você também pode usar a tag <FONT> para definir o tamanho, bem como sua cor e tipo da fonte.
+<FONT FACE> - Define o tipo de letra
+<FONT COLOR> - Define a cor da letra
+<FONT SIZE> - Define o tamanho da letra
+Veja abaixo alguns exemplos:
+<FONT FACE="ARIAL" SIZE="1" COLOR="RED">Fica assim</FONT>
+<FONT FACE="ARIAL" SIZE="2" COLOR="BLUE">Fica assim</FONT>
+<FONT FACE="ARIAL" SIZE="3" COLOR="BLACK">Fica assim</FONT>
+<FONT FACE="TIMES" SIZE="5" COLOR="BLUE">Fica assim</FONT>
+* Note que você define com mais precisão o tamanho das letras do que a tag <H>.
+Ir para o topo
+COMO FORMATAR OS TEXTOS :
+
+Formatando o texto em Negrito, Itálico, Sublinhado e Centralizado. TAGS:
+<B> - Negrito, <U> - Sublinhado, <I> - Itálico e <CENTER> - Centralizado
+<B>Texto em Negrito</B>
+<U>Texto Sublinhado</U>
+<I>Texto em Itálico</I>
+<STRIKE> ou <S> Texto Riscado assim
+<SUB> Como em H2O - O número 2 ficou em baixo.
+<SUP> Como em Km2 - O número 2 ficou em cima.
+<CENTER>Texto Centralizado</CENTER>
+
+Você também pode acumular os efeitos, agrupando os códigos Ex.:
+<CENTER><B><U><I>O texto fica assim</B></U></I></CENTER>
+
+Ir para o topo
+COMO FAZER PARÁGRAFOS E LINHAS :
+
+Não basta você teclar ENTER para que a linha vá para baixo. Você terá que colocar uma TAG para um parágrafo ou para uma nova linha.
+Para parágrafo usar a TAG <P> e para linha usar <BR> Exemplo:
+<P>
+Primeiro Parágrafo
+<BR>
+Primeira Linha
+<P>
+Segundo Parágrafo
+<BR>
+Segunda Linha
+Note que cada vez que você coloca a TAG <BR> estará fazendo uma nova linha, que também não deixa de ser um parágrafo.
+Se você escrever sem usar as tags <BR> ou <P> o próprio browser quebra as linhas automaticamente.
+
+Ir para o topo
+ALINHAMENTO COM A TAG <P> :
+
+Para alinhar os parágrafos basta incluir depois do "P" o parâmetro "align + tipo de alinhamento", conforme abaixo:
+<P ALIGN="LEFT"> Texto alinhado à esquerda.
+<P ALIGN="RIGHT"> Texto alinhado à direita.
+<P ALIGN="CENTER"> Texto centralizado.
+<P ALIGN="JUSTIFY"> Texto justificado.
+Ir para o topo
+COMO INCLUIR IMAGENS NO SITE :
+
+A TAG utilizada é: <img src="nome da imagem+extensão"(gif,jpg,bmp,etc)>
+Atributos da Imagem:
+WIDTH - Define a largura da imagem.
+HEIGHT - Define a altura da imagem.
+ALT - Texto que aparece quando é passado o mouse sobre a imagem
+BORDER - É um valor atribuido à largura da borda da imagem (Contorno).
+Veja alguns exemplos:
+<img src="zero.gif" alt="Seu texto" border="0">
+<img src="zero.gif" alt="Seu texto" border="1">
+<img src="zero.gif" alt="Seu texto" border="2" width="20" height="20">
+Note que no ultimo exemplo especificamos o tamanho da imagem. Não definindo este tamanho, a imagem aparecerá no tamanho original. Você pode especificar um tamanho menor do que a original, pois não acarretará perda de qualidade da imagem, mas se fizer ao contrário, isto é, definir um tamanho maior que a original perderá qualidade de imagem.
+O correto é você ter a imagem do tamanho certo que deseja que apareça na página. Evite colocar imagens maiores que 50 Kb. Quanto maior a imagem mais tempo leverá para carregar.
+Alinhamento texto de imagens:
+<img src="zero.gif" align="top">
+<img src="zero.gif" align="middle">
+<img src="zero.gif" align="left">
+<img src="zero.gif" align="right">
+Há também os atributos de moldura, que definem o espaço vertical e horizontal entre as imagens e os textos circundantes, onde:
+<IMG SRC="imagem.gif" VSPACE=espaço vertical>
+<IMG SRC="imagem.gif" HSPACE=espaço horizontal>
+Ex.: <IMG SRC="imagem.gif" ALIGN="LEFT" WIDTH="10" HEIGHT="10" VSPACE="50">
+<IMG SRC="imagem.gif" ALIGN="RIGHT" WIDTH="10" HEIGHT="10" HSPACE="30">
+Ir para o topo
+COMO FAZER OS LINKS :
+
+Links são pontos clicáveis que levam a qualquer site da internet ou qualquer página do site e até mesmo qualquer ponto da própria página. A TAG usada é:
+<a href="nome do lugar à ser levado">descrição do lugar</a>	
+Exemplos
+<a href="http://www.extremaonline.com">Conheça Extrema-MG</a> Resultado:
+Conheça Extrema-MG
+
+Note que formou-se um link para um determinado site que foi descrito no código acima.
+Se você clicar abrirá o referido site em uma outra janela, isto é, sem que você saia deste site, isto porque foi adicionado o atributo "TARGET", então na verdade, para você não fechar esta janela, o código inserido aqui foi:
+<a href="http://www.extremaonline.com" target="_blank">Conheça Extrema-MG</a> Para fazer um link para uma outra página do seu site use:
+<a href="pagina_tal.html">Clic aqui</a> - Note que após o nome da página é colocado a extensão .html
+Ir para o topo
+COMO FAZER IMAGEM COM LINK :
+
+É simples fazer uma imagem ter um link. Ao invés de colocar o texto com a descrição do lugar, coloque a TAG de imagem. Veja o exemplo:
+<a href="http://www.extremaonline.com"><IMG SRC="local, nome da imagem + extensão"></a> Sendo que:
+http://www.extremaonline.com é o URL (endereço) do site.
+local é caso você tenha armazenado suas imagens em uma pasta. Ex. Pasta "Imagens".
+nome da imagem + extensão Exemplo: minhafoto.jpg ou barra.gif
+Veja o exemplo abaixo, note que formou um link na figura e o levará ao referido site acima.
+ Lembre-se: foi usado a target"_blank" para abrir em uma nova janela.
+Ir para o topo
+COMO FAZER LINKS PARA DOWNLOAD :
+
+Na verdade não existe o comando específico. O que acontece é que quando criamos um link para um arquivo que o navegador não reconhece, ele automaticamente inicia o download, por exemplo, o navegador não reconhece os arquivos com extensão ZIP, EXE, RAR, etc., nestes casos ele inicia o download. Veja exemplos:
+<a href="arquivo.rar">Clic aqui para baixar</a>
+<a href="pasta_tal/arquivo.zip">Clic aqui para baixar</a>
+Certas extensões de arquivos fazem com que os navegadores, em vez de fazer o download, abrem com programas instalados no computador.
+Se você fazer um link para um arquivo de vídeo ".avi" o navegador abrirá o programa para exibir esse vídeo. Para que isso não aconteça, sempre compacte seus arquivos para download no formato zip ou rar, por exemplo, tornando-os mais leves (menores) e download será mais rápido.
+Ir para o topo
+L I S T A S :
+
+Nesta página já existem várias listas. Logo abaixo já tem outra lista com os nomes:
+Listas Ordenadas
+Listas sem ordenação
+Listas Encadeadas
+Exemplos: A lista acima (Ordenada) foi feita com os seguintes códigos:
+<OL> <LI> <LI> <LI> </OL> Os números são inseridos automaticamente.
+Se você quiser trocar os números por letras, Ex.: A, B, C. ao invés de usar só <OL>
+use <OL START=1 TYPE=A> - Onde "1" indica para começar pela primeira letra do alfabeto.
+Lista Sem Ordenação:
+<UL> <LI> <LI> <LI> </UL>
+Resultado:
+Primeiro item.
+Segundo item.
+Terceiro item. As "bolinhas" são inseridas automaticamente.
+Listas Encadeadas:
+<OL> <LI> <UL> <LI> <LI> </UL> <LI> </OL> Produz resultado misto.
+Ir para o topo
+COMO INSERIR IMAGEM DE FUNDO NO SEU SITE:
+
+Para você colocar uma imagem de fundo no seu site é só colocar um atributo dentro da TAG <BODY>, assim: <BODY BACKGROUND="nome da imagem+extensão">.
+Quando a imagem é menor que o tamanho da tela, o navegador duplica essa imagem tantas vezes forem necessárias para cobrir todo o espaço da tela.
+Existem vários tamanhos de telas. Lembre-se: imagens grandes demoram à carregar.
+Ir para o topo
+COMO FAZER LETREIROS E LINHAS :
+
+Para colocar um letreiro na página é utilizado a TAG <MARQUEE>Veja o código:
+<MARQUEE BEHAVIOR=SCROLL DIRECTION="RIGHT" BGCOLOR="YELLOW"WIDTH=50%>TEXTO</MARQUEE>
+Resultado
+TEXTO
+Onde: DIRECTION= indica a direção "LEFT" ou "RIGHT".
+BGCOLOR= indica a cor de fundo do letreiro.
+WIDTH= indica a porcentagem que o letreiro ocupará sua página.
+Dica: Se você quiser que o texto pare no final, ao invés de SCROLL escreva SLIDE.
+Outro exemplo: <MARQUEE DIRECTION="RIGHT"> <FONT SIZE="3" COLOR="RED" FACE="COMIC SANS MS">texto</FONT></MARQUEE>
+LINHAS Para inserir uma linha basta colocar a TAG <HR>.
+Não é preciso fechar "</HR>".
+Atributos da Linha Você pode definir a largura, cor e alinhamento.
+<HR SIZE=10> - Insere uma linha de largura 10 pixels.
+<HR WIDTH=50%> - Insere uma linha que ocupa 50% do espaço em tela.
+<HR WIDTH=50% ALIGN=RIGHT> - Insere uma linha que ocupa 50% do espaço em tela alinhada à Direita. Ou LEFT à esquerda.
+Cor da Linha
+<HR SIZE=1 WIDTH=100% COLOR="RED"> Veja o resultado:
+
+Ir para o topo
+COMO FAZER TABELAS :
+
+As tabelas valorizam o Layout das páginas, pois dão harmonia e organização dos textos, imagens, listas, etc. A tabela é representada pelas Tags <TABLE> e </TABLE> e possue os seguintes atributos:
+border="valor" -Onde o "valor" define a largura da borda (contorno).
+cellspacing="valor" -Onde o "valor" define o espaço horizontal entre as células.
+cellpadding="valor" -Onde o "valor" define o espaço vertical entre as células.
+width="valor" -Onde o "valor" define a largura da tabela em pixels ou em porcentagem.
+height="valor" -Onde o "valor" define a altura da tabela em pixels ou em porcentagem.
+bgcolor="#cor" -Define a cor de fundo da tabela.
+bordercolor="#cor" -Define a cor da borda.
+background="imagem.jpg" -Define uma imagem de fundo.
+A tabela possui alguns comandos que são:
+<TR> e </TR> -Define uma linha da tabela.
+<TH> e </TH> -Define um cabeçalho da tabela.
+<TD> e </TD> -Define a coluna de informações.
+<CAPTION> e </CAPTION> -Define o título da tabela.
+Veja um exemplo: <TABLE BORDER="2" BORDERCOLOR="RED" CELLSPACING="10" CELLPADDING="6" WIDTH="50" HEIGHT="20" BGCOLOR="YELLOW" <TR> <TD> 1a.coluna </TD> <TD>2a.coluna </TD> <TD> 3a.coluna </TD> </TR> <TR> <TD> 1a.linha </TD> <TD> 1a.linha </TD><TD> 1a.linha </TD> </TABLE> </BR>
+Você pode colocar o código acima em apenas uma linha. Resultado:
+1a.coluna	2a.coluna	3a.coluna
+1a.linha	1a.linha	1a.linha
+
+Para que a tabela fique centralizada, como acima, use a tag <CENTER> antes do código e
+</CENTER> depois do código.
+Também pode-se alinhar o texto dentro das células, utilizando os seguintes atributos:
+Align="left" -Alinha o texto à esquerda.
+Align="right" -Alinha o texto à direita.
+Align="center" -Alinha o texto no centro.
+Valign="top" -Alinha o texto no topo da célula.
+Valign="middle" -Alinha o texto no meio da célula.
+Valign="bottom" -Alinha o texto na parte inferior da célula.
+ADICIONANDO UMA LISTA DENTRO DA CÉLULA:
+<TABLE BORDER="1" <TR> <TD>lista dentro da célula<UL> <LI>1 item<LI>2 item<LI>3 item</UL> </TD> </TABLE>Resultado:
+lista dentro da célula
+1 item
+2 item
+3 item
+Ir para o topo
+SITE COM FRAMES :
+
+Resume-se em mais de uma página em uma só tela. É necessário criar três páginas para criar uma página com dois frames, ou seja, uma página principal onde terá as tags referente ao frame que deverá ser salva como: index.html e as outras duas serão abertas dentro desta página principal.
+Exemplo:
+<HTML>
+<HEAD>
+<TITLE> Título da página </TITLE>
+</HEAD>
+<FRAMESET COLS="20%, 80%">
+<FRAME SRC="pagina1.html">
+<FRAME SRC="pagina2.html">
+<NOFRAME>
+</NOFRAME>
+</FRAMESET>
+<BODY>
+</BODY>
+</HTML>
+Os códigos acima só serão colocados na página principal que será salva como "index.html".
+Normalmente nesse tipo de frame a página1.html é usada para os menus e a página2.html para conteúdo geral do site.
+Neste caso <FRAMESET COLS="20%, 80%"> o atributo COLS divide as colunas ou seja, 20% do lado esquerdo e 80% do lado direito da página.
+Sempre da esquerda para direita. Então a página1.html ocupará 20% do espaço e a página2.html ocupará 80% (espaço vertical).
+Copie o código acima, cole no Bloco de Notas e salve como "index.html" depois dê 2 cliques nesse arquivo para visualizá-lo aberto em seu browser.
+As tags <NOFRAME> e </NOFRAME> é usado somente para avisar usuário que utiliza browser muito antigo que a página contém frames, que não as conseguirá visualizar (muito difícil acontecer).
+Exemplo 2:
+<HTML>
+<HEAD>
+<TITLE> Título da página </TITLE>
+</HEAD>
+<FRAMESET COLS="20%, 80%">
+<FRAME SRC="pagina1.html">
+<FRAMESET ROWS="20%, 80%">
+<FRAME SRC="pagina3.html">
+<FRAME SRC="pagina2.html">
+<NOFRAME>
+</NOFRAME>
+</FRAMESET>
+<BODY>
+</BODY>
+</HTML>
+Copie o código acima, cole no Bloco de Notas e salve como "index.html" depois dê 2 cliques nesse arquivo para visualizá-lo aberto em seu browser.
+Exemplo 3:
+<HTML>
+<HEAD>
+<TITLE> Título da página </TITLE>
+</HEAD>
+<FRAMESET ROWS="20%, 80%">
+<FRAME SRC="pagina1.html">
+<FRAME SRC="pagina2.html">
+<NOFRAME>
+</NOFRAME>
+</FRAMESET>
+<BODY>
+</BODY>
+</HTML>
+Copie o código acima, cole no Bloco de Notas e salve como "index.html" depois dê 2 cliques nesse arquivo para visualizá-lo aberto em seu browser.
+Ir para o topo
+COMO INSERIR MÚSICA NO SITE:
+
+Para inserir uma música em sua página, antes de fechar a tag <HEAD> coloque a tag: <BGSOUND SRC="musica.mid">.A Extensão do arquivo pode ser .mid ou .wav.
+Para que a música toque novamente, sempre, acrescente: loop="-1" Assim:
+<BGSOUND SRC="musica.mid" loop="-1">
+No exemplo acima a música tocará sem que apareça o "display" na tela. O internauta não terá como parar, pausar ou iniciar.
+Para que apareça o display na tela, como você vê abaixo, coloque está tag:
+<EMBED SRC="musica.mid" AUTOSTART="FALSE" LOOP="TRUE">
+* Note que você terá que acionar PLAY para iniciar a música.
+
+* Para que abra a página já tocando a música, coloque este código:
+<EMBED SRC="musica.mid" AUTOSTART= LOOP="TRUE">
+* Você ainda pode definir o tamanho do display, assim:
+<EMBED SRC="musica.mid" AUTOSTART= LOOP="TRUE" WIDTH=145 HEIGHT=25>
+Ir para o topo
+COMO INSERIR FLASH NO SITE:
+
+Para inserir um flash (arquivo com extensão .swf), como abaixo, coloque este código depois da tag <BODY>:
+<OBJECT CLASSID="FLASH" CODEBASE="http://download.macromedia.com/pub/shockwave/cabs/
+flash/swflash.cab#version=6,0,0,0 "> <EMBED SRC="arquivo.swf" WIDTH="200" HEIGHT="200" TYPE="application/x-shockwave-flash" PLUGINSPAGE="http://www.macromedia.com/go/getflashplayer"</EMBED> </OBJECT>
+ 
+
+Note no código acima que você pode especificar o tamanho da imagem. Se você não colocar os atributos "WIDTH e HEIGHT" a imagem ficará no tamanho original (tamanho que foi criada).
+Ir para o topo
+COMO INSERIR VÍDEO NO SITE:
+
+Para inserir um vídeo (arquivo com extensão .avi), como abaixo, coloque este código depois da tag <BODY>:
+<EMBED SRC="arquivo.avi" </EMBED>
+
+
+
+Note que está no tamanho reduzido, pois foi utilizado "WIDTH e HEIGHT", mas não é preciso, pois o tamanho é padrão, a menos que lhe seja útil.
+Ir para o topo
+META TAGS :
+
+Após feito seu site, não basta apenas coloca-lo na internet somente com a tag título,
+<TITLE> Título da página</TITLE>, é preciso que os buscadores, como o Google, Yahoo, etc "achem" o seu site, e outras informações, por isso, você deve inserir as METAS TAGS necessárias, entre <HEAD> e </HEAD> conforme abaixo:
+<META NAME="keywords" CONTENT="palavras chaves">
+Note que onde está escrito "palavras chaves" você deve colocar as palavras pelo qual os buscadores encontrarão seu site quando procurado na pesquisa pelo Google, Yahoo, por exemplo. As palavras deverão ser escritas em minúsculas e separadas por uma vírgula e logo após um espaço. Ex.: "bonito, fotos, casamento, dicas, downloads, etc".
+<META NAME="Description" CONTENT="descrição do seu site">
+Informe do que se trata seu site, coerente com o título e as palavras chaves.
+Ex.: "Site bonito, com fotos de casamento, downloads e dicas".
+<META NAME="AUTHOR" CONTENT="seu nome">
+Coloque seu nome, pois é ético e fornece confiança ao site.
+<META NAME="ROBOTS" CONTENT="INDEX, FOLLOW">Sendo:
+"index,follow" - Indexa a página inicial e todas as páginas nela indicadas.
+"noindex,follow" - Não indexa a página inicial, mas indexa as páginas nela indicada.
+"index,nofollow" - Indexa a página inicial, mas não os links que ela indique.
+"noindex,nofollow" - Não indexa nem a página inicial e nem os links.
+Se é seu primeiro site, está aprendendo, use o primeiro exemplo "index,follow".
+Aconselho você que fez um site com FRAMES usar "index,follow" somente na página que você salvou como index.html, e nas outra páginas "noindex,nofollow" ou simplesmente não use essa tag nessas páginas.
+<META HTTP-EQUIV="CONTENT-LANGUAGE" CONTENT="pt">
+Coloque em todas as páginas do site, instruindo os navegadores que seu site é feito em lingua portuguêsa.
+<META NAME="GENERATOR" CONTENT="Microsoft FrontPage 5.0">
+Indique que programa usou para fazer o site, FrontPage, Bloco de Notas, etc.
+<META HTTP-EQUIV="CONTENT-TYPE" CONTENT="text/html; charset=iso-8859-1">
+Indica que você escreveu normalmente seus textos nas páginas html (com acentuação, etc) sem usar caracteres especiais (ASCII), e a META TAG acima indica isto (palavras originarias do Latim).
+Existem outras Meta Tags que você deve verificar:
+Cliando aqui
+Ir para o topo
+COMO FAZER UM LINK PARA ENVIAR E-MAIL :
+
+Código:<a href="mailto:seuemail@provedor.com.br">Clic Aqui</a>
+Note que ao ser clicado no link (Clic Aqui), abrirá o programa que está instalado no computador, exemplo: Outlook, Incredimail, etc. Porém nem todos tem esses programas instalados, vão buscar seus e-mails diretamente nos sites, motivo pelo qual você deve sempre deixar visível seu endereço de e-mail, como abaixo:
+Meu e-mail é: fulano@provedor.com.br se preferir, Clic Aqui
+Ir para o topo
+COMO FAZER UMA CAIXA DE TEXTO :
+
+Código:<textarea rows="5" cols="50" style="background-color: #ffffff">ESCREVA AQUI O SEU TEXTO</textarea>
+Fica assim:
+
+
+Ir para o topo
+COMO FAZER UMA ÂNCORA :
+
+Repare que ao clicar ir para âncora você foi redirecionado à outro ponto desta página. Isto é chamado "ÂNCORA".
+Você pode redirecionar o usuário para qualquer ponto de sua página ou para outro ponto de outra página.
+O código de destino, isto é, o ponto de chegada ao ser clicado é:
+Código:<a name="ancora">
+E o código do comando "ir para" é:
+Código:<a href="#ancora">ir para ancora</a>
+Você pode criar vários pontos, como:
+<a name="ancora2"> e <a href="#ancora2">ir para ancora2</a>
+Para fazer o usuário "Ir para o topo" não é necessário uma âncora como acima, tem um código especial para isto:
+Código: <a href="#top">Ir para o topo</a>
+Para ir à outra página:
+Código: <a href="nomedapagina.html#ancora">ir para ancora</a>
+Utilizando uma imagem como âncora:
+Código: <a href="#ancora"><img src="imagem.jpg"></a>
+Ir para o topo
+OUTRAS DICAS:
+
+Após fazer seu site, veja Como colocar o site na Internet 
+Você também pode ganhar dinheiro com seu site em programas de Afiliados.
+Como?: Quantidade é a alma do negócio.   Consulte   Clicando Aqui 
+Para gerar tráfego no Seu site:   Funciona Mesmo   Clica Aqui e depois AQUI 
+Agora uma dica muito legal. Um provedor que funciona 100% com um painel incrível. 
+O famoso CPanel, lá você tem emails; redirecionamentos; banco de dados e muitas outras coisas incríveis. 
+Hospede alí seu site em HTML, PHP ou outra linguagem. 
+O mais legal, é o preço mais justo que já ví: Super Provedor 
+Seu site no topo das buscas, consulte: Como aparecer 
+Se você já fez um site ou blog ou tem Facebook, Twitter ou participa de uma rede social é hora de começar a ganhar dinheiro: Veja que legal 
+Só indico estes, porque garanto que funcionam, não conheço outros melhores. São muito bons.
+
+Faça turismo em Extrema MG - Confira Hotéis em Extrema - Imobiliárias em Extrema - Restaurantes em Extrema
+
+Se você tiver alguma dúvida, vá no INDEX (menu acima) e entre em contato, teremos prazer em ajudar. 
+
+Agora que já dei essas dicas, entre nesse projeto que poderá mudar sua vida, assim como mudou a minha, visite: Projeto do Bem
